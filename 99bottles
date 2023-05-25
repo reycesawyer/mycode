@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+"""Challenge 44. 99 Bottles of Beer challenge"""
+
+print("This script will count down all the way 0 bottles of beer on the wall from the number you choose")
+
+startpoint = int(input("How many bottles of beer do you want to start out with? "))
+
+if startpoint >= 1 and startpoint <= 100:
+    print("Starting Now!")
+else:
+    print("Please choose between 1 and 100")
+    exit()
+
+while True:
+    if startpoint > 1 and startpoint <= 100:
+        print(f"{startpoint} bottles of beer on the wall!")
+        print(f"{startpoint} bottles of beer on the wall! {startpoint} bottles of beer! You take one down, pass it around!")
+        startpoint = startpoint - 1
+    elif startpoint == 1:
+        print(f"{startpoint} bottle of beer on the wall!")
+        print(f"{startpoint} bottle of beer on the wall! {startpoint} bottle of beer! You take one down, pass it around!")
+        startpoint = startpoint - 1
+    elif startpoint == 0:
+        print("Song Complete")
+        break
+
