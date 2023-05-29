@@ -1,42 +1,31 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3o
+
+"""This is Reyce's TLG Mini Project 2. It is explained down below."""
 
 import csv
 
+print("This is a database containing information about nfl players. You can search by certain criteria to find information about players.")
 
-def findplayerbyname(csv_file, name):
-    allplayers = []
-    with open("nflplayers.txt", 'r') as playerdatafile:
-        reader = csv.reader(playerdatafile)
+print("1. name\n2. first_name\n3. last_name\n4. birth_city\n5. birth_state\n6. birth_country\n7. birth_date\n8. college\n9. draft_team\n10. draft_round\n11. draft_pick\n12. draft_year\n13. position\n14. height\n15. weight\n16. death_date\n17. death_city\n18. death_state\n19. death_country\n20. year_start\n21. year_end")
+choice= int(input("Chose what section you want to search by: \n"))
+name_to_find = input("What do you want to search for?\n")
+sort_choice = int(input("Choose what section you want to sort by: \n"))
+
+def find_players_by_name(csv_file, name):
+    matching_rows = []
+    with open(csv_file, 'r') as player_data_file:
+        reader = csv.reader(player_data_file)
         for row in reader:
-            if row[0] == name:
-                return row
-    return None
-
-name_to_find = input("What player do you want to search for?\n").capitalize()
+            if name.lower() in row[choice - 1].lower():
+                matching_rows.append(row)
+    return matching_rows
 
 
-data = int(input("Enter the data you want to be returned: "))
-
-
-
-
-foundrow = findplayerbyname("nflplayers.txt", name_to_find)
-if foundrow:
-    if 0 <= data < len(foundrow):
-        with open("nflplayers.txt", 'r') as playerdatafile:
-            reader = csv.reader(playerdatafile)
-            csv_data = list(reader)
-            if len(csv_data) > 0:
-                data = csv_data[0][data]
-                print(f"Row found: {foundrow[data]}")
-    else:
-        print("Invalid data index.")
+found_rows = find_players_by_name("nflplayers.txt", name_to_find)
+if found_rows:
+    sorted_rows = sorted(found_rows, key=lambda x: x[sort_choice - 1])
+    for row in sorted_rows:
+        print(f"Player: {row[0]} {row[1:-1]}\n")
 else:
     print("Player not found.")
-
-
-#name,first_name,last_name,birth_city,birth_state,birth_country,birth_date,college,draft_team,draft_round,draft_pick,draft_year,position,height,weight,death_date,death_city,death_state,death_country,year_start,year_end
-
-
-
 
