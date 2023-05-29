@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+import csv
+
+
+def findplayerbyname(csv_file, name):
+    allplayers = []
+    with open("nflplayers.txt", 'r') as playerdatafile:
+        reader = csv.reader(playerdatafile)
+        for row in reader:
+            if row[0] == name:
+                return row
+    return None
+
+name_to_find = input("What player do you want to search for?\n").capitalize()
+
+
+data = int(input("Enter the data you want to be returned: "))
+
+
+
+
+foundrow = findplayerbyname("nflplayers.txt", name_to_find)
+if foundrow:
+    if 0 <= data < len(foundrow):
+        with open("nflplayers.txt", 'r') as playerdatafile:
+            reader = csv.reader(playerdatafile)
+            csv_data = list(reader)
+            if len(csv_data) > 0:
+                data = csv_data[0][data]
+                print(f"Row found: {foundrow[data]}")
+    else:
+        print("Invalid data index.")
+else:
+    print("Player not found.")
+
+
+#name,first_name,last_name,birth_city,birth_state,birth_country,birth_date,college,draft_team,draft_round,draft_pick,draft_year,position,height,weight,death_date,death_city,death_state,death_country,year_start,year_end
+
+
+
+
