@@ -40,15 +40,6 @@ B: Faraday cage
 (D). Guards
 Answer: B
 
-NO.5 An administrator is configuring a firewall rule set for a subnet to only access DHCP, web pages,
-and SFTP, and to specifically block FTP. Which of the following would BEST accomplish this goal?
-(A). Option A
-(B). Option B
-(C). Option C
-(D). Option D
-Answer: A
-
-NO.6 Which of the following environments utilizes dummy data and is MOST likely to be installed
 locally on a system that allows code to be assessed directly and modified easily with each build?
 (A). Production
 (B). Test
@@ -194,11 +185,6 @@ the following is the BEST security solution to reduce this risk?
 (D). VPC endpoint
 Answer: A
 
-NO.20 A company recently expenenced an attack dunng which #5 main website was directed to the
-atacker's web server, allowing the attacker to harvest credentials from unsuspecting customers.
-Vhich of the following snould the company Implement to prevent this type of attack from accurting in
-the future?
-Answer: B
 
 NO.21 An application owner has requested access for an external application to upload data from
 the central internal website without providing credentials at any point. Which of the following
@@ -337,11 +323,6 @@ implementation to present this from happeing again?
 (E). Implement content filters
 Answer: A
 
-NO.30 An engineer is configuring AAA authentication on a Cisco MDS 9000 Series Switch. The LDAP
-server is located under the IP 10.10.2.2. The data sent to the LDAP server should be encrypted. Which
-command should be used to meet these requirements?
-Answer: D
-
 NO.31 An analyst has determined that a server was not patched and an external actor exfiltrated
 data on port 139. Which of the following sources should the analyst review to BEST ascertain how the
 incident could have been prevented?
@@ -434,13 +415,6 @@ requirements?
 (D). Install a captive portal
 Answer: D
 
-NO.40 A security analyst is reviewing web-application logs and finds the following log:
-Which of the following attacks is being observed?
-(A). Directory traversal
-(B). XSS
-(C). CSRF
-(D). On-path attack
-Answer: A
 
 NO.41 Which of the following BEST describes the MFA attribute that requires a callback on a
 predefined landline?
@@ -496,35 +470,6 @@ this scenario?
 (D). Implement a content filter to block the unauthorized software communication.
 Answer: B
 
-NO.47 A user attempts to load a web-based application, but the expected login screen does not
-appear A help desk analyst troubleshoots the issue by running the following command and reviewing
-the output on the user's PC
-The help desk analyst then runs the same command on the local PC
-Which of the following BEST describes the attack that is being detected?
-(A). Domain hijacking
-(B). DNS poisoning
-(C). MAC flooding
-(D). Evil twin
-Answer: B
-
-NO.48 A company is setting up a web server on the Internet that will utilize both encrypted and
-unencrypted web-browsing protocols. A security engineer runs a port scan against the server from
-the Internet and sees the following output:
-Which of the following steps would be best for the security engineer to take NEXT?
-(A). Allow DNS access from the internet.
-(B). Block SMTP access from the Internet
-(C). Block HTTPS access from the Internet
-(D). Block SSH access from the Internet.
-Answer: D
-
-NO.49 A security analyst is investigating suspicious traffic on the web server located at IP address
-10.10.1.1. A search of the WAF logs reveals the following output:
-Which of the following is MOST likely occurring?
-(A). XSS attack
-(B). SQLi attack
-(C). Replay attack
-(D). XSRF attack
-Answer: B
 
 NO.50 A new company wants to avoid channel interference when building a WLAN. The company
 needs to know the radio frequency behavior, identify dead zones, and determine the best place for
@@ -598,429 +543,6 @@ checking the Integrity of zone transfers. Which of the following solutions shoul
 (D). DLP
 Answer: D
 
-NO.57 A security analyst is reviewing the following attack log output:
-Which of the following types of attacks does this MOST likely represent?
-(A). Rainbow table
-(B). Brute-force
-(C). Password-spraying
-(D). Dictionary
-Answer: C
-
-Password spraying is a type of brute-force attack in which a malicious actor uses a single password
-against targeted user accounts before moving on to attempt a second password, and so on. This
-technique allows the actor to remain undetected by avoiding rapid or frequent account lockouts.
-https://us-cert.cisa.gov/ncas/current-activity/2019/08/08/acsc-releases-advisory-password-sprayingattacks#:~:text=Password%20spraying%20is%20a%20type,rapid%20or%20frequent%20account%20l
-ockouts.
-NO.58 A security analyst receives the configuration of a current VPN profile and notices the
-authentication is only applied to the IP datagram portion of the packet. Which of the following should
-the analyst implement to authenticate the entire packet?
-(A). AH
-(B). ESP
-(C). SRTP
-(D). LDAP
-Answer: B
-
-NO.59 Which of the following controls would provide the BEST protection against tailgating?
-(A). Access control vestibule
-(B). Closed-circuit television
-(C). Proximity card reader
-(D). Faraday cage
-Answer: A
-
-NO.60 An enterprise has hired an outside security firm lo conduct a penetration test on its network
-and applications, The enterprise provided the firm with access to a guest account. Which af the
-following BEST represents the type of testing that is being used?
-(A). Black-box
-(B). Red-team
-(C). Gray-box
-(D). Bug bounty
-(E). White-box
-Answer: C
-
-NO.61 After a phishing scam for 9 user's credentals, the red team was able to craft a payload to
-deploy on @ server. The attack allowed the installaton of malicious software that intiates @ new
-remote session.
-Which of the following types of attacks has occurred?
-(A). Privilege escalation
-(B). Session replay
-(C). Application programming interface
-(D). Directory traversal
-Answer: A
-
-NO.62 Which of the following are the MOST likely vectors for the unauthorized inclusion of
-vulnerable code in a software company's final software releases? (Select TWO.)
-(A). Unsecure protocols
-(B). Use of penetration-testing utilities
-(C). Weak passwords
-(D). Included third-party libraries
-(E). Vendors/supply chain
-(F). Outdated anti-malware software
-Answer: A,C
-
-NO.63 Which of the following refers to applications and systems that are used within an
-organization without consent or approval?
-(A). Shadow IT
-(B). OSINT
-(C). Dark web
-(D). Insider threats
-Answer: A
-
-NO.64 A company recently moved sensitive videos between on-premises. Company-owned
-websites. The company then learned the videos had been uploaded and shared to the internet.
-Which of the following would MOST likely allow the company to find the cause?
-(A). Checksums
-(B). Watermarks
-(C). Oder of volatility
-(D). A log analysis
-(E). A right-to-audit clause
-Answer: D
-
-https://www.sumologic.com/glossary/log-analysis/
-"While companies can operate private clouds, forensics in a public cloud are complicated by the right
-to audit permitted to you by your service level agreement (SLA) with the cloud provider."
-NO.65 Which of the following corporate policies is used to help prevent employee fraud and to
-detect system log modifications or other malicious activity based on tenure?
-(A). Background checks
-(B). Mandatory vacation
-(C). Social media analysis
-(D). Separation of duties
-Answer: B
-
-NO.66 A company's bank has reported that multiple corporate credit cards have been stolen over
-the past several weeks. The bank has provided the names of the affected cardholders to the
-company's forensics team to assist in the cyber-incident investigation.
-An incident responder learns the following information:
-The timeline of stolen card numbers corresponds closely with affected users making Internet-based
-purchases from diverse websites via enterprise desktop PCs.
-All purchase connections were encrypted, and the company uses an SSL inspection proxy for the
-inspection of encrypted traffic of the hardwired network.
-Purchases made with corporate cards over the corporate guest WiFi network, where no SSL
-inspection occurs, were unaffected.
-Which of the following is the MOST likely root cause?
-(A). HTTPS sessions are being downgraded to insecure cipher suites
-(B). The SSL inspection proxy is feeding events to a compromised SIEM
-(C). The payment providers are insecurely processing credit card charges
-(D). The adversary has not yet established a presence on the guest WiFi network
-Answer: C
-
-NO.67 An employee, receives an email stating he won the lottery. The email includes a link that
-requests a name, mobile phone number, address, and date of birth be provided to confirm
-employee's identity before sending him the prize. Which of the following BEST describes this type of
-email?
-(A). Spear phishing
-(B). Whaling
-(C). Phishing
-(D). Vishing
-Answer: C
-
-NO.68 An enterprise to keep cryptpgraphic keys in a sade manner.Whihc of the fikkowug network
-appliances can achieve this goals?
-(A). HSM
-(B). CASB
-(C). TPM
-(D). DLP
-Answer: A
-
-NO.69 Which of the following will provide the BEST physical security countermeasures to stop
-intruders? (Select TWO.)
-(A). Alarms
-(B). Signage
-(C). Lighting
-(D). Access control vestibules
-(E). Fencing
-(F). Sensors
-Answer: D,E
-
-Alarms=deterrent, Signage=deterrent, Lighting=deterrent, Mantraps=physical countermeasure,
-Fencing=physical countermeasure and Sensors are either reactive or technical.
-https://www.professormesser.com/security-plus/sy0-501/physical-security-controls-2/
-NO.70 A smart switch has the ability to monitor electrical levels and shut off power to a building in
-the event of power surge or other fault situation. The switch was installed on a wired network in a
-hospital and is monitored by the facilities department via a cloud application. The security
-administrator isolated the switch on a separate VLAN and set up a patch routine. Which of the
-following steps should also be taken to harden the smart switch?
-Answer: B
-
-NO.71 A Chief information Officer is concemed about employees using company-issued laptops to
-steal dala when accessing network shares Which of the following should the company implement?
-(A). DLP
-(B). CASB
-(C). HIDS
-(D). EDR
-(E). UEFI
-Answer: A
-
-NO.72 Which of the following conditions impacts data sovereignty?
-(A). Rights management
-(B). Criminal investigations
-(C). Healthcare data
-(D). Intemational operations
-Answer: D
-
-NO.73 A company recently decided to allow its employees to use their personally owned devices for
-tasks like checking email and messaging via mobile applications. The company would like to use
-MDM, but employees are concerned about the loss of personal dat a. Which of the following should
-the IT department implement to BEST protect the company against company data loss while still
-addressing the employees' concerns?
-(A). Enable the remote-wiping option in the MDM software in case the phone is stolen.
-(B). Configure the MDM software to enforce the use of PINs to access the phone.
-(C). Configure MDM for FDE without enabling the lock screen.
-(D). Perform a factory reset on the phone before installing the company's applications.
-Answer: B
-
-NO.74 Which of the following is a security best practice that ensures the integrity of aggregated log
-files within a SIEM?
-(A). Set up hashing on the source log file servers that complies with local regulatory requirements,
-(B). Back up the aggregated log files at least two times a day or as stated by local regulatory
-requirements.
-(C). Write protect the aggregated log files and move them to an isolated server with limited access.
-(D). Back up the source log files and archive them for at least six years or in accordance with local
-regulatory requirements.
-Answer: A
-
-NO.75 A security analyst is hardening a network infrastructure. The analyst is given the following
-requirements:
-* Preserve the use of public IP addresses assigned to equipment on the core router.
-* Enable "in transport" encryption protection to the web server with the strongest ciphers.
-Which of the following should the analyst implement to meet these requirements? (Select TWO).
-(A). Configure VLANs on the core router.
-(B). Configure NAT on the core router.
-(C). Configure BGP on the core router.
-(D). Enable AES encryption on the web server.
-(E). Enable 3DES encryption on the web server.
-(F). Enable TLSv2 encryption on the web server.
-Answer: A,E
-
-NO.76 The Chief Information Security Officer (CISO) has requested that a third-party vendor provide
-supporting documents that show proper controls are in place to protect customer dat a. Which of the
-following would be BEST for the third-party vendor to provide to the CISO?
-(A). GDPR compliance attestation
-(B). Cloud Security Alliance materials
-(C). SOC 2 Type 2 report
-(D). NIST RMF workbooks
-Answer: C
-
-https://www.itgovernance.co.uk/soc-reporting
-NO.77 he Chief Information Secunty Officer came across a news arbcle outining a mechan'sm thal
-allows certan OS passwords to be bypassed The security team was then tasked with determining
-which method could be used to prevent data loss in the corporate environment in case an attacker
-bypasses authentication Which of the following will accomplish this objective?
-(A). FDE
-(B). Proper patch management protocols
-(C). TPM
-(D). Input validations
-Answer: A
-
-NO.78 A researcher has been analyzing large data sets for the last ten months. The researcher works
-with colleagues from other institutions and typically connects via SSH to retrieve additional dat a.
-Historically, this setup has worked without issue, but the researcher recently started getting the
-following message:
-Which of the following network attacks is the researcher MOST likely experiencing?
-(A). MAC cloning
-(B). Evil twin
-(C). Man-in-the-middle
-(D). ARP poisoning
-Answer: C
-
-NO.79 Several attempts have been made lo pick the door lock of a secure facility As a result the
-security engineer has been assigned to implement a stronger preventative access control Which of
-the following would BEST complete the engineer's assignment?
-(A). Replacing the traditional key with an RFID key
-(B). Installing and monitoring a camera facing the door
-(C). Setting motion-sensing lights to illuminate the door on activity
-(D). Surrounding the property with fencing and gates
-Answer: D
-
-NO.80 Which of the following would BEST provide a systems administrator with the ability to more
-efficiently identify systems and manage permissions and policies based on location, role, and service
-level?
-Answer: C
-
-NO.81 The Chief Compliance Officer from a bank has approved a background check policy for all new
-hires Which of the following is the policy MOST likely protecting against?
-(A). Preventing any current employees' siblings from working at the bank to prevent nepotism
-(B). Hiring an employee who has been convicted of theft to adhere to industry compliance
-(C). Filtenng applicants who have added false information to resumes so they appear better qualified
-(D). Ensuring no new hires have worked at other banks that may be trying to steal customer
-information
-Answer: B
-
-NO.82 A compart jut heplmanieg 6 new tlewor ploy thet owe eriptoyens f wee personel doce or
-ocala and fe aherag wo wong tow howe. Some of ie
-* Employees must provide an alternate work location (i.e., a home address)
-* Employees must install software on the device that will prevent the loss of proprietary data but will
-not restrict any other software from being installed.
-Which of the following BEST describes the MDM options the company is using?
-(A). Geofencing, content management, remote wipe, containerization, and storage segmentation
-(B). Content management, remote wipe, geolocation, context-aware authentication, and
-containerization
-(C). Application management, remote wipe, geofencing, context-aware authentication, and
-containerization
-(D). Remote wipe, geolocation, screen locks, storage segmentation, and full-device encryption
-Answer: D
-
-NO.83 An organization recently acquired an ISO 27001 certification. Which of the following would
-MOST likely be considered a benefit of this certification?
-(A). It allows for the sharing of digital forensics data across organizations
-(B). It provides insurance in case of a data breach
-(C). It provides complimentary training and certification resources to IT security staff.
-(D). It certifies the organization can work with foreign entities that require a security clearance
-(E). It assures customers that the organization meets security standards
-Answer: E
-
-party libraries embedded on software before it is released into production?
-(A). Employ different techniques for server- and client-side validations.
-(B). Use a different version control system for third-party libraries.
-(C). Implement a vulnerability scan to assess dependencies earlier on SDLC.
-(D). Increase the number of penetration tests before software release.
-Answer: C
-
-NO.85 An analyst needs to identify the applications a user was running and the files that were open
-before the user's computer was shut off by holding down the power button. Which of the following
-would MOST likely contain that information?
-(A). NGFW
-(B). Pagefile
-(C). NetFlow
-(D). RAM
-Answer: C
-
-NO.86 An organization's help desk is flooded with phone calls from users stating they can no longer
-access certain websites. The help desk escalates the issue to the security team, as these websites
-were accessible the previous day. The security analysts run the following command: ipconfig
-/flushdns, but the issue persists. Finally, an analyst changes the DNS server for an impacted machine,
-and the issue goes away. Which of the following attacks MOST likely occurred on the original DNS
-server?
-(A). DNS cache poisoning
-(B). Domain hijacking
-(C). Distributed denial-of-service
-(D). DNS tunneling
-Answer: D
-
-NO.87 A manufacturing company has several one-off legacy information systems that cannot be
-migrated to a newer OS due to software compatibility issues. The OSs are still supported by the
-vendor, but the industrial software is no longer supported. The Chief Information Security Officer
-(CISO) has created a resiliency plan for these systems that will allow OS patches to be installed in a
-non-production environment, while also creating backups of the systems for recovery. Which of the
-following resiliency techniques will provide these capabilities?
-(A). Redundancy
-(B). RAID 1+5
-(C). Virtual machines
-(D). Full backups
-Answer: D
-
-NO.88 A company recently experienced a data breach and the source was determined to be an
-executive who was charging a phone in a public are a. Which of the following would MOST likely have
-prevented this breach?
-(A). A firewall
-(B). A device pin
-(C). A USB data blocker
-(D). Biometrics
-Answer: C
-
-https://www.promorx.com/blogs/blog/how-does-a-usb-data-blocker-work Connecting via the data
-port of your mobile device, the Data Blockers creates a barrier between your mobile device and the
-charging station. Your phone will draw power as usual, allowing you to use it normally and charge it
-at the same time, but this clever piece of equipment will prevent any data exchange.
-"Malicious USB charging cables and plugs are also a widespread problem. As with card skimming, a
-device may be placed over a public charging port at airports and other transit locations. A USB data
-blocker can provide mitigation against these juice- jacking attacks by preventing any sort of data
-transfer when the smartphone or laptop is connected to a charge point "
-NO.89 Which of the following BEST reduces the security risks introduced when running systems that
-have expired vendor support and lack an immediate replacement?
-(A). Implement proper network access restrictions
-(B). Initiate a bug bounty program
-(C). Classify the system as shadow IT.
-(D). Increase the frequency of vulnerability scans
-Answer: A
-
-NO.90 A company's Chief Information Security Officer (CISO) recently warned the security manager
-that the company's Chief Executive Officer (CEO) is planning to publish a controversial option article
-in a national newspaper, which may result in new cyberattacks Which of the following would be BEST
-for the security manager to use in a threat mode?
-Answer: A
-
-NO.91 A network engineer created two subnets that will be used for production and development
-servers. Per security policy, production and development servers must each have a dedicated
-network that cannot communicate with one another directly. Which of the following should be
-deployed so that server administrators can access these devices?
-(A). VLANS
-(B). Internet proxy servers
-(C). NIDS
-(D). Jump servers
-Answer: D
-
-NO.92 A large enterprise has moved all Hs data to the cloud behind strong authentication and
-encryption A sales director recently had a laptop stolen and later, enterprise data was round to have
-been compromised database.
-Which of the following was the MOST likely cause?
-(A). Shadow IT
-(B). Credential stuffing
-(C). SQL injection
-(D). Man-in-the-browser
-(E). Bluejacking
-Answer: A
-
-NO.93 uring an investigation, a security manager receives notification from local authorities that
-company proprietary data was found on a former employee's home computer. The former
-employee's corporate workstation has since been repurposed, and the data on the hard drive has
-been overwritten. Which of the following would BEST provide the security manager with enough
-details to determine when the data was removed from the company network?
-(A). Properly configured hosts with security logging
-(B). Properly configured endpoint security tool with alerting
-(C). Properly configured SIEM with retention policies
-(D). Properly configured USB blocker with encryption
-Answer: C
-
-NO.94 During a routine scan of a wireless segment at a retail company, a security administrator
-discovers several devices are connected to the network that do not match the company's naming
-convention and are not in the asset Inventory. WiFi access Is protected with 255-Wt encryption via
-WPA2. Physical access to the company's facility requires two-factor authentication using a badge and
-a passcode Which of the following should the administrator implement to find and remediate the
-Issue? (Select TWO).
-(A). Check the SIEM for failed logins to the LDAP directory.
-(B). Enable MAC filtering on the switches that support the wireless network.
-(C). Run a vulnerability scan on all the devices in the wireless network
-(D). Deploy multifactor authentication for access to the wireless network
-(E). Scan the wireless network for rogue access points.
-(F). Deploy a honeypot on the network
-Answer: B,E
-
-NO.95 A security engineer is setting up passwordless authentication for the first time.
-INSTRUCTIONS -
-Use the minimum set of commands to set this up and verify that it works. Commands cannot be
-reused.
-If at any time you would like to bring back the initial state of the simulation, please click the Reset All
-button.
-Answer:
-
-NO.96 As part of the building process for a web application, the compliance team requires that all
-PKI certificates are rotated annually and can only contain wildcards at the secondary subdomain
-level. Which of the following certificate properties will meet these requirements?
-(A). HTTPS://.comptia.org, Valid from April 10 00:00:00 2021 - April 8 12:00:00 2022
-(B). HTTPS://app1.comptia.org, Valid from April 10 00:00:00 2021-April 8 12:00:00 2022
-(C). HTTPS:// app1.comptia.org, Valid from April 10 00:00:00 2021-April 8 12:00:00 2022
-(D). HTTPS://.comptia.org, Valid from April 10 00:00:00 2021 - April 8 12:00:00
-Answer: C
-
-NO.97 An employee has been charged with fraud and is suspected of using corporate assets. As
-authorities collect evidence, and to preserve the admissibility of the evidence, which of the following
-forensic techniques should be used?
-(A). Order of volatility
-(B). Data recovery
-(C). Chain of custody
-(D). Non-repudiation
-Answer: C
-
-NO.98 An end user reoorts a computer has been acting slower than normal for a few weeks, During
-an investigation, an analyst determines the system 3 sending the users email address and a ten-cigit
-number ta an IP ackiress ance a day. The anly resent (ag entry regarding the user's computer is the
-fallowing:
-Which of the following is the MOST likely cause of the issue?
-(A). The end user purchased anc installed 2 PUP from a wab browser.
-(B). bot on the cornputer is rule forcing passwords aguinsl vy websile.
-(C). A hacker Is attempting to ex'itrate sens tve cata.
-(D). Ransomwere is communicating with 8 commard-and-contral server.
-Answer: A
 
 NO.99 Hackers recently attacked a company's network and obtained several unfavorable pictures
 from the Chief Executive Officer's workstation. The hackers are threatening to send the images to the
@@ -1091,7 +613,7 @@ been compromised from a local database. Which of the following was the MOST like
 (C). SQL injection
 (D). Man in the browser
 (E). Bluejacking
-Answer: A
+Answer: C
 
 NO.106 A secunty engineer needs to build @ solution to satisty regulatory requirements that stale
 certain critcal servers must be accessed using MFA However, the critical servers are older and are
@@ -1374,13 +896,6 @@ two.)
 (F). Server-side request forgery
 Answer: D,E
 
-NO.138 Given the following snippet of Python code:
-(A). Logic bomb
-(B). Keylogger
-(C). Backdoor
-(D). Ransomware
-Answer: B
-
 NO.139 A Chief Security Officer (CSO) has asked a technician to devise a solution that can detect
 unauthorized execution privileges from the OS in both executable and data files and can work in
 conjunction with proxies or UTM. Which of the following would BEST meet the CSO's requirements?
@@ -1606,160 +1121,6 @@ would be BEST to provide security, manageability, and visibility into the platfo
 (D). SWG
 Answer: C
 
-A cloud access security broker is on-premises or cloud based software that sits between cloud service
-users and cloud applications, and monitors all activity and enforces security policies A CASB has a
-separate, and more distinctive role. Differing from the use case for SWG, which focuses on the
-broader filtering and protection against inbound threats and filtering illegitimate web traffic, a CASB
-is more deeply integrated and has control over your cloud application usage. It can be tied into an
-applications API to scan data at rest or can be used with a proxy based deployment to enforce inline
-policies for more real time protection.
-NO.159 A securily analysl has receved several reporls of an issue on an inlemal web application.
-Users state they are having to provide their credentials brice to log in. The analyst checks with he
-application team and noles Unis is not an expected bohavier. After looking at several lags, the analysi
-deciies to in some commands on the gateway and obtains the following output:
-Which of the following BEST describes the attack the company is experiencing?
-(A). MAC fleoding
-(B). URL redirection
-(C). ARP paisoning
-(D). DNS hijacking
-Answer: C
-
-NO.160 Which of the following is a policy that provides a greater depth of knowldge across an
-organization?
-(A). Asset manahement policy
-(B). Separation of duties policy
-(C). Acceptable use policy
-(D). Job Rotation policy
-Answer: C
-
-NO.161 Which of the following in the incident response process is the BEST approach to improve the
-speed of the identification phase?
-(A). Activate verbose logging in all critical assets.
-(B). Tune monitoring in order to reduce false positive rates.
-(C). Redirect all events to multiple syslog servers.
-(D). Increase the number of sensors present on the environment.
-Answer: B
-
-NO.162 An organization regularly scans its infrastructure for missing security patches but is
-concerned about hackers gaining access to the scanner's account. Which of the following would be
-BEST to minimize this risk?
-(A). Require a complex, eight-character password that is updated every 90 days.
-(B). Perform only non-intrusive scans of workstations.
-(C). Use non-credentialed scans against high-risk servers.
-(D). Log and alert on unusual scanner account logon times.
-Answer: D
-
-NO.163 An organization Chief information Security Officer a position that will be responsibles for
-implementing technical controls to protect data, include ensuring backups are properly maintained.
-Which of the following roles would MOST likely include these responsibilities?
-(A). Data protection officer
-(B). Data owner
-(C). Backup administrator
-(D). Data custodian
-(E). Internal auditor
-Answer: A
-
-NO.164 An administrator needs to protect user passwords and has been advised to hash the
-passwords. Which of the following BEST describes what the administrator is being advised to do?
-(A). Perform a mathematical operation on the passwords that will convert them into umgue stnngs
-(B). Add extra data to the passwords so their length is increased, making them harder to brute force
-(C). Store all passwords in the system in a rainbow table that has a centralized location
-(D). Enforce the use of one-time passwords that are changed for every login session.
-Answer: D
-
-NO.165 An incident response technician collected a mobile device during an investigation. Which of
-the following should the technician do to maintain chain of custody?
-(A). Document the collection and require a sign-off when possession changes.
-(B). Lock the device in a safe or other secure location to prevent theft or alteration.
-(C). Place the device in a Faraday cage to prevent corruption of the data.
-(D). Record the collection in a blockchain-protected public ledger
-Answer: A
-
-NO.166 A systems analyst is responsible for generating a new digital forensics chain-of-custody
-form. Which of the following should the analyst include in this documentation? (Select TWO).
-(A). The order of volatility
-(B). A CRC32 checksum
-(C). The provenance of the artifacts
-(D). The vendor's name
-(E). The date time
-(F). A warning banner
-Answer: A,E
-
-NO.167 Some laptops recently went missing from a locked storage area that is protected by keyless
-RFID-enabled locks. There is no obvious damage to the physical space. The security manager
-identifies who unlocked the door, however, human resources confirms the employee was on
-vacation at the time of the incident. Which of the following describes what MOST likely occurred?
-(A). The employee's physical access card was cloned.
-(B). The employee is colluding with human resources
-(C). The employee's biometrics were harvested
-(D). A criminal used lock picking tools to open the door.
-Answer: A
-
-NO.168 Which of the following incident response steps occurs before containment?
-(A). Eradication
-(B). Recovery
-(C). Lessons learned
-(D). Identification
-Answer: D
-
-NO.169 A company is concerned about individuals driving a car into the building to gain access.
-Which of the following security controls would work BEST to prevent this from happening?
-(A). Bollard
-(B). Camera
-(C). Alarms
-(D). Signage
-(E). Access control vestibule
-Answer: A
-
-Bollards are posts designed to prevent vehicles from entering an area. They are usually made of steel
-or concrete and are placed close together to make it difficult for vehicles to pass through. In addition
-to preventing vehicles from entering an area, bollards can also be used to protect buildings and
-pedestrians from ramming attacks. They are an effective and cost-efficient way to protect buildings
-and pedestrians from unauthorized access.
-NO.170 A developer is concerned about people downloading fake malware-infected replicas of a
-popular game. Which of the following should the developer do to help verify legitimate versions of
-the game for users?
-Answer: A
-
-NO.171 A security proposal was set up to track requests for remote access by creating a baseline of
-the users' common sign-in properties. When a baseline deviation is detected, an Iv1FA challenge will
-be triggered. Which of the following should be configured in order to deploy the proposal?
-(A). Context-aware authentication
-(B). Simultaneous authentication of equals
-(C). Extensive authentication protocol
-(D). Agentless network access control
-Answer: A
-
-An access control scheme that verifies an object's identity based on various environmental factors,
-like time, location, and behavior.
-NO.172 A cybersecurity analyst needs to implement secure authentication to third-party websites
-without users' passwords. Which of the following would be the BEST way to achieve this objective?
-(A). OAuth
-(B). SSO
-(C). SAML
-(D). PAP
-Answer: C
-
-NO.173 A Chief Information Security Officer (CISO) is evaluating (he dangers involved in deploying a
-new ERP system tor the company. The CISO categorizes the system, selects the controls mat apply to
-the system, implements the controls, and then assesses the success of the controls before
-authorizing the system Which of the following is the CISO using to evaluate Hie environment for this
-new ERP system?
-(A). The Diamond Model of Intrusion Analysis
-(B). CIS Critical Security Controls
-(C). NIST Risk Management Framevtoik
-(D). ISO 27002
-Answer: D
-
-NO.174 A security analyst is investigating some users who are being redirected to a fake website
-that resembles www.comptia.org. The following output was found on the naming server of the
-organization:
-Which of the following attacks has taken place?
-(A). Domain reputation
-(B). Domain hijacking
-(C). Disassociation
-(D). DNS poisoning
-Answer: D
 
 NO.175 A vulnerability assessment report will include the CVSS score of the discovered
 vulnerabilities because the score allows the organization to better.
@@ -1838,107 +1199,6 @@ of the following stages of the Inciden reapanse process is this an example af?
 (D). Preparation
 Answer: C
 
-NO.183 A SOC operator is analyzing a log file that contains the following entries:
-(A). SQL injection and improper input-handling attempts
-(B). Cross-site scripting and resource exhaustion attempts
-(C). Command injection and directory traversal attempts
-(D). Error handling and privilege escalation attempts
-Answer: C
-
-NO.184 Which of the following processes will eliminate data using a method that will allow the
-storage device to be reused after the process is complete?
-(A). Pulverizing
-(B). Overwriting
-(C). Shredding
-(D). Degaussing
-Answer: D
-
-https://dataspan.com/blog/what-are-the-different-types-of-data-destruction-and-which-one-shouldyou-use/
-NO.185 A financial institution would like to store its customer data in a cloud but still allow the data
-to be accessed and manipulated while encrypted. Doing so would prevent the cloud service provider
-from being able to decipher the data due to its sensitivity. The financial institution is not concerned
-about computational overheads and slow speeds. Which of the following cryptographic techniques
-would BEST meet the requirement?
-(A). Asymmetric
-(B). Symmetric
-(C). Homomorphic
-(D). Ephemeral
-Answer: B
-
-NO.186 A network technician is installing a guest wireless network at a coffee shop. When a
-customer purchases an Item, the password for the wireless network is printed on the recent so the
-customer can log in. Which of the following will the technician MOST likely configure to provide the
-highest level of security with the least amount of overhead?
-(A). WPA-EAP
-(B). WEP-TKIP
-(C). WPA-PSK
-(D). WPS-PIN
-Answer: C
-
-NO.187 A dynamic application vulnerability scan identified code injection could be performed using
-a web form. Which of the following will be BEST remediation to prevent this vulnerability?
-(A). Implement input validations
-(B). Deploy MFA
-(C). Utilize a WAF
-(D). Configure HIPS
-Answer: B
-
-NO.188 An organization with a low tolerance for user inconvenience wants to protect laptop hard
-drives against loss or data theft. Which of the following would be the MOST acceptable?
-(A). SED
-(B). HSM
-(C). DLP
-(D). TPM
-Answer: A
-
-NO.189 The spread of misinformation sorrounding the outbreak of a bnovel virus on election day led
-to eligible voters chooseing not to take risk of goding to the polls. This is an exampla of:
-(A). Prepending
-(B). An influence compain
-(C). A watering-hole attack.
-(D). Intimidation.
-(E). Information elicitation.
-Answer: D
-
-NO.190 In the middle of a cybersecurity, a security engineer removes the infected devices from the
-network and lock down all compromised accounts. In which of the following incident response
-phases is the security engineer currently operating?
-(A). Identification
-(B). Preparation
-(C). Eradiction
-(D). Recovery
-(E). Containment
-Answer: E
-
-Isolation involves removing affected components from any environment the greater one. This can be
-anything from removing the server from the network after become the target of DoS attacks, to the
-point of placing applications in a VM sandbox outside the environment where the host usually runs.
-Whatever the situation, you'll want to make sure you don't there is another Interface between the
-affected component and the production network or the Internet.
-NO.191 Which of the following actions would be recommended to improve an incident response
-process?
-(A). Train the team to identify the difference between events and incidents
-(B). Modify access so the IT team has full access to the compromised assets
-(C). Contact the authorities if a cybercrime is suspected
-(D). Restrict communication surrounding the response to the IT team
-Answer: A
-
-NO.192 During a recent penetration test, the tester discovers large amounts of data were exfiltrated
-over the course of 12 months via the internet. The penetration tester stops the test to inform the
-client of the findings Which of the following should be the client's NEXT step to mitigate the issue''
-(A). Conduct a full vulnerability scan to identify possible vulnerabilities
-(B). Perform containment on the critical servers and resources
-(C). Review the firewall and identify the source of the active connection
-(D). Disconnect the entire infrastructure from the internet
-Answer: D
-
-NO.193 A security analyst Is reviewing the following output from a system:
-Which of the following is MOST likely being observed?
-(A). ARP polsoning
-(B). Man in the middie
-(C). Denial of service
-(D). DNS poisoning
-Answer: C
 
 NO.194 Due to unexpected circumstances, an IT company must vacate its main office, forcing all
 operations to alternate, off-site locations. Which of the following will the company MOST likely
@@ -1949,21 +1209,6 @@ reference for guidance during this change?
 (D). The incident response plan
 Answer: A
 
-BCP is to empower an organization to keep crucial functions running during downtime. This, in turn,
-helps the organization respond quickly to an interruption, while creating resilient operational
-protocols.
-NO.195 A systems administrator reports degraded performance on a virtual server. The
-administrator increases the virtual memory allocation which improves conditions, but performance
-degrades again after a few days. The administrator runs an anarysis tool and sees the following
-output:
-The administrator terminates the timeAttend.exe observes system performance over the next few
-days, and notices that the system performance does not degrade Which of the following issues is
-MOST likely occurring?
-(A). DLL injection
-(B). API attack
-(C). Buffer oveiflow
-(D). Memory leak
-Answer: C
 
 NO.196 A database administrator needs to ensure all passwords are stored in a secure manner, so
 the administrate adds randomly generated data to each password before string. Which of the
@@ -2013,16 +1258,6 @@ requirements?
 (D). NIPS
 Answer: D
 
-NO.201 A systems administrator needs to install a new wireless network for authenticated guest
-access. The wireless network should support 802. IX using the most secure encryption and protocol
-available.
-Perform the following steps:
-1. Configure the RADIUS server.
-2. Configure the WiFi controller.
-3. Preconfigure the client for an incoming guest. The guest AD credentials are:
-User: guest01
-Password: guestpass
-Answer:
 
 Use the same settings as describe in below images.
 NO.202 A securtly analyst wants to reference a standard to develop a risk management program.
@@ -2031,7 +1266,7 @@ Which af the following ts the BEST source for the analyst to use?
 (B). SO 31000
 (C). NIST CSF
 (D). GDPR
-Answer: B
+Answer: C
 
 NO.203 A cybersecurity administrator needs to add disk redundancy for a critical server. The
 solution must have a two- drive failure for better fault tolerance. Which of the following RAID levels
@@ -2112,227 +1347,6 @@ lateral spread and the risk that the adversary would notice any changes?
 (D). Apply network blacklisting rules for the adversary domain
 Answer: B
 
-NO.211 A security analyst sees the following log output while reviewing web logs:
-Which of the following mitigation strategies would be BEST to prevent this attack from being
-successful?
-(A). Secure cookies
-(B). Input validation
-(C). Code signing
-(D). Stored procedures
-Answer: B
-
-NO.212 Which of the following would be used to find the MOST common web-application
-vulnerabilities?
-(A). OWASP
-(B). MITRE ATT&CK
-(C). Cyber Kill Chain
-(D). SDLC
-Answer: A
-
-NO.213 A security manager runs Nessus scans of the network after every maintenance vandow
-Which of the following ts the securty manager MOST likely trying to accomplish?
-(A). A Verifying that system patching has effectively removed known vulnerabilities
-(B). identifying assets on the network that may not exist on the network asset inventory
-(C). Validating the hosts do not have vulnerable ports exposed to the Intemet
-(D). Checking the status of the automated malware analyses that is beang performed
-Answer: A
-
-NO.214 Which of the following are the BEST ways to implement remote home access to a company's
-intranet systems if establishing an always-on VPN is not an option? (Select Two)
-(A). Install VPN concentrations at home offices
-(B). Create NAT on the firewall for intranet systems
-(C). Establish SSH access to a jump server
-(D). Implement a SSO solution
-(E). Enable MFA for intranet systems
-(F). Configure SNMPv3 server and clients.
-Answer: A,E
-
-NO.215 Which of the following would be the BEST method for creating a detailed diagram of
-wireless access points and hot-spots?
-(A). Footprinting
-(B). White-box testing
-(C). A drone/UAV
-(D). Pivoting
-Answer: A
-
-NO.216 A client sent several inquiries to a project manager about the delinquent delivery status of
-some critical reports. The project manager claimed the reports were previously sent via email, but
-then quickly generated and backdated the reports before submitting them as plain text within the
-body of a new email message thread. Which of the following actions MOST likely supports an
-investigation for fraudulent submission?
-(A). Establish chain of custody.
-(B). Inspect the file metadata.
-(C). Reference the data retention policy.
-(D). Review the email event logs
-Answer: D
-
-NO.217 A smail business office is setting up a wireless infrastructure with primary requirements
-centered around protecting customer information and preventing unauthorized access to the
-business network. Which of the following would BEST support the office's business needs? (Select
-TWO)
-(A). Installing WAPs with strategic placement
-(B). Configuring access using WPA3
-(C). Installing a WIDS
-(D). Enabling MAC filtering
-(E). Changing the WiFi password every 30 days
-(F). Reducing WiFi transmit power throughout the office
-Answer: B,D
-
-NO.218 The Chief Information Security Officer wants to prevent exfiltration of sensitive information
-from employee cell phones when using public USB power charging stations. Which of the following
-would be the BEST solution to Implement?
-(A). DLP
-(B). USB data blocker
-(C). USB OTG
-(D). Disabling USB ports
-Answer: A
-
-USB data blockers are good, but they're reliant on the employee actually using them. A DLP solution
-such as MobileIron forces compliance, by locking corporate resources behind a secure application.
-For example: Users any mobile device policy, such as BYOD, CYOD, and COPE. If they want to access
-their corporate email on their phone. They will need to sign into the MobileIron application, in order
-to be granted visibility to their corporate email account. Since the emails are being read/sent through
-the MobileIron application. Safeguards can be applied even on an outside network-mobile level. If an
-employee attempts to send a customers social security number, the MobileIron will either block it,
-alert it, or both, contingent on how the company setup the MobileIron service to work.
-NO.219 An organidation recently discovered that a purchasing officer approved an invoice for an
-amount that was different than the original purchase order. After further investigation, a security
-analyst determines that the digital signature for the fraudulent invoice is exactly the same as the
-digital signature for the correct invoice that had been approved. Which of the following attacks MOST
-likely explains the behavior?
-(A). Birthday
-(B). Rainbow table
-(C). Impersonation
-(D). Whaling
-Answer: C
-
-NO.220 An organization has been experiencing outages during holiday sales and needs to ensure
-availability of its point-of-sale systems The IT administrator has been asked to improve both serverdata fault tolerance and site availability under high consumer load Which of the following are the
-BEST options to accomplish this objective'? (Select TWO)
-(A). Load balancing
-(B). Incremental backups
-(C). UPS
-(D). RAID
-(E). Dual power supply
-(F). NIC teaming
-Answer: A,D
-
-NO.221 An organization has developed an application that needs a patch to fix a critical vulnerability
-In which of the following environments should the patch be deployed LAST?
-(A). Test
-(B). Staging
-(C). Development
-(D). Production
-Answer: A
-
-NO.222 Which of the following is an effective tool to stop or prevent the exfiltration of data from a
-network?
-(A). DLP
-(B). NIDS
-(C). TPM
-(D). FDE
-Answer: A
-
-Data loss prevention (DLP) makes sure that users do not send sensitive or critical information outside
-the corporate network
-NO.223 Users have been issued smart cards that provide physical access to a building. The cards also
-contain tokens that can be used to access information systems. Users can log m to any thin client
-located throughout the building and see the same desktop each time. Which of the following
-technologies are being utilized to provide these capabilities? (Select TWO)
-(A). COPE
-(B). VDI
-(C). GPS
-(D). TOTP
-(E). RFID
-(F). BYOD
-Answer: B,E
-
-NO.224 A security analyst receives an alert from trie company's SIEM that anomalous activity is
-coming from a local source IP address of 192.168.34.26. The Chief Information Security Officer asks
-the analyst to block the originating source Several days later, another employee opens an internal
-ticket stating that vulnerability scans are no longer being performed properly. The IP address the
-employee provides is 192 168.3426. Which of the following describes this type of alert?
-(A). True positive
-(B). True negative
-(C). False positive
-(D). False negative
-Answer: C
-
-NO.225 An organization that is located in a flood zone is MOST likely to document the concerns
-associated with the restoration of IT operation in a:
-(A). business continuity plan
-(B). communications plan.
-(C). disaster recovery plan.
-(D). continuity of operations plan
-Answer: C
-
-NO.226 An organization wants seamless authentication to its applications. Which of the following
-should the organization employ to meet this requirement?
-(A). SOAP
-(B). SAML
-(C). SSO
-(D). Kerberos
-Answer: C
-
-NO.227 The Chief Information Security Officer wants to pilot a new adaptive, user-based
-authentication method. The concept Includes granting logical access based on physical location and
-proximity. Which of the following Is the BEST solution for the pilot?
-(A). Geofencing
-(B). Self-sovereign identification
-(C). PKl certificates
-(D). SSO
-Answer: A
-
-NO.228 Which of the following describes a maintenance metric that measures the average time
-required to troubleshoot and restore failed equipment?
-(A). RTO
-(B). MTBF
-(C). MTTR
-(D). RPO
-Answer: C
-
-NO.229 An organization has hired a ted team to simulate attacks on its security posture Which of
-the following will the blue team do after detecting an loC?
-(A). Reimage the impacted workstations
-(B). Activate runbooks for incident response
-(C). Conduct forensics on the compromised system
-(D). Conduct passive reconnaissance to gather information
-Answer: B
-
-NO.230 A security analyst is performing a packet capture on a series of SOAP HTTP requests for a
-security assessment. The analyst redirects the output to a file After the capture is complete, the
-analyst needs to review the first transactions quickly and then search the entire series of requests for
-a particular string Which of the following would be BEST to use to accomplish the task? (Select TWO).
-Answer: A,C
-
-A - "analyst needs to review the first transactions quickly"
-C - "search the entire series of requests for a particular string"
-NO.231 An organization is moving away from the use of client-side and server-side certificates for
-EAR The company would like for the new EAP solution to have the ability to detect rogue access
-points. Which of the following would accomplish these requirements?
-(A). PEAP
-(B). EAP-FAST
-(C). EAP-TLS
-(D). EAP-TTLS
-Answer: C
-
-NO.232 A recent audit uncovered a key finding regarding the use of a specific encryption standard in
-a web application that is used to communicate with business customers. Due to the technical
-limitations of its customers the company is unable to upgrade the encryption standard. Which of the
-following types of controls should be used to reduce the risk created by this scenario?
-(A). Physical
-(B). Detective
-(C). Preventive
-(D). Compensating
-Answer: D
-
-NO.233 The following are the logs of a successful attack.
-Which of the following controls would be BEST to use to prevent such a breach in the future?
-(A). Password history
-(B). Account expiration
-(C). Password complexity
-(D). Account lockout
-Answer: D
 
 NO.234 A user recently entered a username and password into a recruiting application website that
 had been forged to look like the legitimate site Upon investigation, a security analyst the identifies
@@ -2347,7 +1361,7 @@ Which of the following MOST likely occurred?
 (B). An SSL strip MITM attack was performed
 (C). An attacker temporarily pawned a name server
 (D). An ARP poisoning attack was successfully executed
-Answer: B
+Answer: C
 
 NO.235 Which of the following biometric authentication methods is the MOST accurate?
 (A). Gait
@@ -2404,88 +1418,6 @@ consuming mitigation actions. Which of the following can be configured to stream
 (E). SIEM data collection
 Answer: A
 
-NO.240 A security analyst has been asked to investigate a situation after the SOC started to receive
-alerts from the SIEM. The analyst first looks at the domain controller and finds the following events:
-To better understand what is going on, the analyst runs a command and receives the following
-output:
-Based on the analyst's findings, which of the following attacks is being executed?
-(A). Credential harvesting
-(B). Keylogger
-(C). Brute-force
-(D). Spraying
-Answer: D
-
-Brute forcing focuses intensively on one account with every computable password attempt, whereas
-spraying simply attempts a few or several passwords on an account before moving on.
-NO.241 The Chief information Security Officer has directed the security and networking team to
-retire the use of shared passwords on routers and switches. Which of the following choices BEST
-meets the requirements?
-(A). SAML
-(B). TACACS+
-(C). Password vaults
-(D). OAuth
-Answer: B
-
-NO.242 A company is required to continue using legacy software to support a critical service. Which
-of the following BEST explains a risk of this practice?
-(A). Default system configuration
-(B). Unsecure protocols
-(C). Lack of vendor support
-(D). Weak encryption
-Answer: C
-
-NO.243 A security analyst is configuring a large number of new company-issued laptops. The analyst
-received the following requirements:
-* The devices will be used internationally by staff who travel extensively.
-* Occasional personal use is acceptable due to the travel requirements.
-* Users must be able to install and configure sanctioned programs and productivity suites.
-* The devices must be encrypted
-* The devices must be capable of operating in low-bandwidth environments.
-Which of the following would provide the GREATEST benefit to the security posture of the devices?
-(A). Configuring an always-on VPN
-(B). Implementing application whitelisting
-(C). Requiring web traffic to pass through the on-premises content filter
-(D). Setting the antivirus DAT update schedule to weekly
-Answer: A
-
-NO.244 Which of the following BEST explains the difference between a data owner and a data
-custodian?
-(A). The data owner is responsible for adhering to the rules for using the data, while the data
-custodian is responsible for determining the corporate governance regarding the data
-(B). The data owner is responsible for determining how the data may be used, while the data
-custodian is responsible for implementing the protection to the data
-(C). The data owner is responsible for controlling the data, while the data custodian is responsible for
-maintaining the chain of custody when handling the data
-(D). The data owner grants the technical permissions for data access, while the data custodian
-maintains the database access controls to the data
-Answer: B
-
-NO.245 Server administrators want to configure a cloud solution so that computing memory and
-processor usage is maximized most efficiently across a number or virtual servers. They also need to
-avoid potential dental-of-service situations caused by availability. Which of the following should
-administrators configure to maximize system availability while efficiently utilizing available
-computing power?
-(A). Dynamic resource allocation
-(B). High availably
-(C). Segmentation
-(D). Container security
-Answer: A
-
-NO.246 ihic ofthe lowing iste BEST resnon to meitsin efrciona ani SSUES Rane ETS or cricai?
-(A). To provide data to quantify risk based on the organization's systems
-(B). To keep all software and hardware fully patched for known vulnerabilities
-(C). To only allow approved, organization-owned devices onto the business network
-(D). To standardize by selecting one laptop model for all users in the organization
-Answer: A
-
-NO.247 You received the output of a recent vulnerability assessment.
-Review the assessment and scan output and determine the appropriate remedialion(s} 'or each
-dewce.
-Remediation options may be selected multiple times, and some devices may require more than one
-remediation.
-If at any time you would like to biing bade the initial state ot the simulation, please dick me Reset All
-button.
-Answer:
 
 NO.248 A security engineer has enabled two-factor authentication on all workstations. Which of the
 following approaches are the MOST secure? (Select TWO).
@@ -2569,355 +1501,6 @@ are reverting to HTTP. Which of the following BEST describes what is happening?
 (D). A SSUTLS downgrade
 Answer: D
 
-NO.257 During a recent security incident at a multinational corporation a security analyst found the
-following logs for an account called user:
-Which Of the following account policies would BEST prevent attackers from logging in as user?
-(A). Impossible travel time
-(B). Geofencing
-(C). Time-based logins
-(D). Geolocation
-Answer: A
-
-NO.258 A security analyst has identified malware spreading through the corporate network and has
-activated the CSIRT Which of the following should the analyst do NEXT?
-(A). Review how the malware was introduced to the network.
-(B). Attempt to quarantine all infected hosts to limit further spread.
-(C). Create help desk tickets to get infected systems reimaged.
-(D). Update all endpoint antivirus solutions with the latest updates.
-Answer: B
-
-NO.259 After installing a Windows server, a cybersecurity administrator needs to harden it,
-following security best practices. Which of the following will achieve the administrator's goal? (Select
-TWO).
-(A). Disabling guest accounts
-(B). Disabling service accounts
-(C). Enabling network sharing
-(D). Disabling NetBIOS over TCP/IP
-(E). Storing LAN manager hash values
-(F). Enabling NTLM
-Answer: A,D
-
-NO.260 A privileged user at a company stole several proprietary documents from a server. The user
-also went into the log files and deleted all records of the incident. The systems administrator has Just
-informed investigators that other log files are available for review. Which of the following did the
-administrator MOST likely configure that will assist the investigators?
-(A). Memory dumps
-(B). The syslog server
-(C). The application logs
-(D). The log retention policy
-Answer: B
-
-NO.261 Which of the following is a physical security control that ensures onty the authorized user is
-present when gaining access to a secured area?
-(A). A biometric scanner
-(B). A smart card reader
-(C). APKItoken
-(D). A PIN pad
-Answer: A
-
-A biometric scanner uses physical characteristics such as fingerprints to identify an individual user. It
-is used to ensure that only the authorized user is present when gaining access to a secured area.
-NO.262 An organization's finance department is implementing a policy to protect against collusion.
-Which of the following control types and corresponding procedures should the organization
-implement to fulfill this policy's requirement? (Select TWO).
-(A). Corrective
-(B). Deterrent
-(C). Preventive
-(D). Mandatory vacations
-(E). Job rotation
-(F). Separation of duties
-Answer: D,E
-
-NO.263 Two organizations plan to collaborate on the evaluation of new SIEM solutions for their
-respective companies. A combined effort from both organizations' SOC teams would speed up the
-effort. Which of the following can be written to document this agreement?
-(A). MOU
-(B). ISA
-(C). SLA
-(D). NDA
-Answer: A
-
-A document that regulates security-relevant aspects of an intended connection between an agency
-and an external system. It regulates the security interface between any two systems operating under
-two different distinct authorities. It includes a variety of descriptive, technical, procedural, and
-planning information. It is usually preceded by a formal MOA/MOU that defines high- level roles and
-responsibilities in management of a cross-domain connection.
-https://csrc.nist.gov/glossary/term/interconnection_security_agreement
-NO.264 A security analyst needs to implement security features across smartphones, laptops, and
-tablets. Which of the following would be the MOST effective across heterogeneous platforms?
-(A). Enforcing encryption
-(B). Deploying GPOs
-(C). Removing administrative permissions
-(D). Applying MDM software
-Answer: D
-
-MDM stands for Mobile Device Management, is software that assists in the implementation of the
-process of managing, monitoring, and securing several mobile devices such as tablets, smartphones,
-and laptops used in the organization to access the corporate information.
-NO.265 A Chief Information Officer receives an email stating a database will be encrypted within 24
-hours unless a payment of $20,000 is credited to the account mentioned In the email. This BEST
-describes a scenario related to:
-(A). whaling.
-(B). smishing.
-(C). spear phishing
-(D). vishing
-Answer: C
-
-NO.266 A Chief Information Officer is concerned about employees using company-issued laptops lo
-steal data when accessing network shares. Which of the following should the company Implement?
-(A). DLP
-(B). CASB
-(C). HIDS
-(D). EDR
-(E). UEFI
-Answer: A
-
-Chmod removes the setuido permission, that is, it removes the S bit. Setuido is the specific
-permission, but it is removed with Chmod. https://www.cbtnuggets.com/blog/technology/systemadmin/linux-file-permissions-understanding-setuid-setgid-and-the-sticky-bit
-NO.267 A security manager needs to assess the security posture of one of the organization's
-vendors. The contract with the vendor does not allow for auditing of the vendor's security controls.
-Which of (he following should the manager request to complete the assessment?
-(A). A service-level agreement
-(B). A business partnership agreement
-(C). A SOC 2 Type 2 report
-(D). A memorandum of understanding
-Answer: A
-
-NO.268 A Chief Security Officer is looking for a solution that can reduce the occurrence of customers
-receiving errors from back-end infrastructure when systems go offline unexpectedly. The security
-architect would like the solution to help maintain session persistence. Which of the following would
-BEST meet the requirements?
-(A). Reverse proxy
-(B). NIC teaming
-(C). Load balancer
-(D). Forward proxy
-Answer: B
-
-NO.269 An analyst visits an internet forum looking for information about a tool. The analyst finds a
-threat that appears to contain relevant information. One of the posts says the following:
-Which of the following BEST describes the attack that was attempted against the forum readers?
-(A). SOU attack
-(B). DLL attack
-(C). XSS attack
-(D). API attack
-Answer: C
-
-Cross-site scripting attacks may occur anywhere that possibly malicious users are allowed to post
-unregulated material to a trusted website for the consumption of other valid users. The most
-common example can be found in bulletin-board websites which provide web based mailing list-style
-functionality. https://owasp.org/www-community/attacks/xss/
-https://www.acunetix.com/websitesecurity/cross-site-scripting/
-NO.270 The website http://companywebsite.com requires users to provide personal information,
-including security question responses, for registration. Which of the following would MOST likely
-cause a data breach?
-(A). Lack of input validation
-(B). Open permissions
-(C). Unsecure protocol
-(D). Missing patches
-Answer: C
-
-NO.271 While preparing a software Inventory report, a security analyst discovers an unauthorized
-program installed on most of the company's servers. The program utilizes the same code signing
-certificate as an application deployed to only the accounting team. Which of the following mitigations
-would BEST secure the server environment?
-(A). Revoke the code signing certificate used by both programs.
-(B). Block all unapproved file hashes from installation.
-(C). Add the accounting application file hash to the allowed list.
-(D). Update the code signing certificate for the approved application.
-Answer: C
-
-NO.272 A security analyst in a SOC has been tasked with onboarding a new network into the SIEM.
-Which of the following BEST describes the information that should feed into a SIEM solution in order
-to adequately support an investigation?
-(A). Logs from each device type and security layer to provide correlation of events
-(B). Only firewall logs since that is where attackers will most likely try to breach the network
-(C). Email and web-browsing logs because user behavior is often the cause of security breaches
-(D). NetFlow because it is much more reliable to analyze than syslog and will be exportable from
-every device
-Answer: A
-
-NO.273 A technician was dispatched to complete repairs on a server in a data center. While locating
-the server, the technician entered a restricted area without authorization. Which of the following
-security controls would BEST prevent this in the future?
-(A). Use appropriate signage to mark all areas.
-(B). Utilize cameras monitored by guards.
-(C). Implement access control vestibules.
-(D). Enforce escorts to monitor all visitors.
-Answer: C
-
-NO.274 A junior security analyst is reviewing web server logs and identifies the following pattern in
-the log file:
-Which ol the following types of attacks is being attempted and how can it be mitigated?
-(A). XSS. mplement a SIEM
-(B). CSRF. implement an IPS
-(C). Directory traversal implement a WAF
-(D). SQL infection, mplement an IDS
-Answer: C
-
-NO.275 Whichppf the following will MOST likely cause machine-learning and Al-enabled systems to
-operate with unintended consequences?
-(A). Stored procedures
-(B). Buffer overflows
-(C). Data bias
-(D). Code reuse
-Answer: A
-
-NO.276 Which of the following is the MOST secure but LEAST expensive data destruction method for
-data that is stored on hard drives?
-(A). Pulverizing
-(B). Shredding
-(C). Incinerating
-(D). Degaussing
-Answer: D
-
-NO.277 A security policy states that common words should not be used as passwords. A security
-auditor was able to perform a dictionary attack against corporate credentials Which of the following
-controls was being violated?
-(A). Password complexity
-(B). Password history
-(C). Password reuse
-(D). Password length
-Answer: B
-
-NO.278 The new Chief Information Security Officer at a company has asked the security team to
-implement stronger user account policies. The new policies require:
-* Users to choose a password unique to their last ten passwords
-* Users to not log in from certain high-risk countries
-Which of the following should the security team implement? (Select TWO).
-(A). Password complexity
-(B). Password history
-(C). Geolocation
-(D). Geofencing
-(E). Geotagging
-(F). Password reuse
-Answer: A,B
-
-NO.279 A cybersecurity manager has scheduled biannual meetings with the IT team and department
-leaders to discuss how they would respond to hypothetical cyberattacks. During these meetings, the
-manager presents a scenario and injects additional information throughout the session to replicate
-what might occur in a dynamic cybersecurity event involving the company, its facilities, its data, and
-its staff. Which of the following describes what the manager is doing?
-(A). Developing an incident response plan
-(B). Building a disaster recovery plan
-(C). Conducting a tabletop exercise
-(D). Running a simulation exercise
-Answer: C
-
-NO.280 Which of the following is the purpose of a risk register?
-(A). To define the level or risk using probability and likelihood
-(B). To register the risk with the required regulatory agencies
-(C). To identify the risk, the risk owner, and the risk measures
-(D). To formally log the type of risk mitigation strategy the organization is using
-Answer: C
-
-NO.281 A company owns a public-facing e-commerce website. The company outsources credit card
-transactions to a payment company. Which of the following BEST describes the role of the payment
-company?
-(A). Data controller
-(B). Data custodian
-(C). Data owners
-(D). Data processor
-Answer: D
-
-A data processor is an organization that processes personal data on behalf of a data controller. In this
-scenario, the company that owns the e-commerce website is the data controller, as it determines the
-purposes and means of processing personal data (e.g. credit card information). The payment
-company is a data processor, as it processes personal data on behalf of the e-commerce company
-(i.e. it processes credit card transactions).
-NO.282 A company wants to build a new website to sell products online. The website will host a
-storefront application that will allow visitors to add products to a shopping cart and pay for the
-products using a credit card. Which of the following protocols would be the MOST secure to
-implement?
-(A). SSL
-(B). FTP
-(C). SNMP
-(D). TLS
-Answer: D
-
-NO.283 An analyst is reviewing logs associated with an attack. The logs indicate an attacker
-downloaded a malicious file that was quarantined by the AV solution. The attacker utilized a local
-non-administrative account to restore the malicious file to a new location. The file was then used by
-another process to execute a payload. Which of the following attacks did the analyst observe?
-(A). Privilege escalation
-(B). Request forgeries
-(C). Injection
-(D). Replay attack
-Answer: A
-
-Cross-site request forgery, also known as one-click attack or session riding and abbreviated as CSRF
-(sometimes pronounced sea-surf[1]) or XSRF, is a type of malicious exploit of a website where
-unauthorized commands are submitted from a user that the web application trusts.[2] There are
-many ways in which a malicious website can transmit such commands; specially-crafted image tags,
-hidden forms, and JavaScript XMLHttpRequests, for example, can all work without the user's
-interaction or even knowledge. Unlike cross-site scripting (XSS), which exploits the trust a user has for
-a particular site, CSRF exploits the trust that a site has in a user's browser.[3] In a CSRF attack, an
-innocent end user is tricked by an attacker into submitting a web request that they did not intend.
-This may cause actions to be performed on the website that can include inadvertent client or server
-data leakage, change of session state, or manipulation of an end user's account.
-NO.284 A security administrator is analyzing the corporate wireless network The network only has
-two access points running on channels 1 and 11. While using airodump-ng. the administrator notices
-other access points are running with the same corporate ESSID on all available channels and with the
-same BSSID of one of the legitimate access ports Which of the following attacks in happening on the
-corporate network?
-(A). Man in the middle
-(B). Evil twin
-(C). Jamming
-(D). Rogue access point
-(E). Disassociation
-Answer: B
-
-NO.285 A user is attempting to navigate to a website from inside the company network using a
-desktop. When the user types in the URL. https://www.site.com, the user is presented with a
-certificate mismatch warning from the browser. The user does not receive a warning when visiting
-http://www.anothersite.com. Which of the following describes this attack?
-(A). On-path
-(B). Domain hijacking
-(C). DNS poisoning
-(D). Evil twin
-Answer: C
-
-NO.286 A network engineer is troubleshooting wireless network connectivity issues that were
-reported by users. The issues are occurring only in the section of the building that is closest to the
-parking lot. Users are intermittently experiencing slow speeds when accessing websites and are
-unable to connect to network drives. The issues appear to increase when laptop users return desks
-after using their devices in other areas of the building. There have also been reports of users being
-required to enter their credentials on web pages in order to gain access to them. Which of the
-following is the MOST likely cause of this issue?
-(A). An external access point is engaging in an evil-twin attack.
-(B). The signal on the WAP needs to be increased in that section of the building.
-(C). The certificates have expired on the devices and need to be reinstalled.
-(D). The users in that section of the building are on a VLAN that is being blocked by the firewall
-Answer: A
-
-NO.287 Which of the following holds staff accountable while escorting unathorized personal?
-(A). Locks
-(B). Badges
-(C). Cameras
-(D). Visitor logs
-Answer: D
-
-NO.288 Which of the following relets to applications and systems that are used within an
-organization without consent or approval?
-(A). Shadow IT
-(B). OSINT
-(C). Dark web
-(D). Insider threats
-Answer: A
-
-NO.289 In a phishing attack, the perpetrator is pretending to be someone in a position of power in
-an effort to influence the target to click or follow the desired response. Which of the following
-principles is being used?
-(A). Authority
-(B). Intimidation
-(C). Consensus
-(D). Scarcity
-Answer: B
-
-NO.290 A security analyst is reviewing the vulnerability scan report for a web server following an
-incident. The vulnerability that was used to exploit the server is present in historical vulnerability scan
-reports, and a patch is available for the vulnerability. Which of the following is the MOST likely cause
-?
-Answer: A
 
 NO.291 A company is concerned about individuals dnvmg a car into the building to gam access
 Which of the following security controls would work BEST to prevent this from happening?
@@ -3005,10 +1588,6 @@ B: Faraday cage
 (D). Guards
 Answer: B
 
-NO.300 After a WiFi scan of a local office was conducted, an unknown wireless signal was identified
-Upon investigation, an unknown Raspberry Pi device was found connected to an Ethernet port using
-a single connection. Which of the following BEST describes the purpose of this device?
-Answer: C
 
 NO.301 Which of the following would MOST likely support the integrity of a voting machine?
 (A). Asymmetric encryption
@@ -3082,16 +1661,6 @@ written?
 (D). Continuous integration
 Answer: D
 
-NO.308 An end user reports a computer has been acting slower than normal for a few weeks. During
-an investigation, an analyst determines the system is sending the user's email address and a ten-digit
-number to an IP address once a day. The only recent log entry regarding the user's computer is the
-following:
-Which of the following is the MOST likely cause of the issue?
-(A). The end user purchased and installed a PUP from a web browser
-(B). A bot on the computer is brute forcing passwords against a website
-(C). A hacker is attempting to exfiltrate sensitive data
-(D). Ransomware is communicating with a command-and-control server
-Answer: A
 
 NO.309 A startup company is using multiple SaaS and IaaS platforms to stand up a corporate
 infrastructure and build out a customer-facing web application. Which of the following solutions
@@ -3199,14 +1768,6 @@ operations. Which of the following would BEST meet the company's requirements?
 (D). Phishing exercise
 Answer: C
 
-NO.320 A SOC operator is receiving continuous alerts from multiple Linux systems indicating that
-unsuccessful SSH attempts to a functional user ID have been attempted on each one of them in a
-short period of time. Which of the following BEST explains this behavior?
-Answer: B
-
-Password Spraying is a variant of what is known as a brute force attack. In a traditional brute force
-attack, the perpetrator attempts to gain unauthorized access to a single account by guessing the
-password "repeatedly" in a very short period of time.
 NO.321 A company wants the ability to restrict web access and monitor the websites that
 employees visit. Which of the following would BEST meet these requirements?
 (A). internet proxy
@@ -3255,14 +1816,6 @@ social-engineering techniques was used in this case?
 (D). Smishing
 Answer: D
 
-NO.327 A security engineer obtained the following output from a threat intelligence source that
-recently performed an attack on the company's server:
-Which of the following BEST describes this kind of attack?
-(A). Directory traversal
-(B). SQL injection
-(C). API
-(D). Request forgery
-Answer: D
 
 NO.328 Which of the following controls is used to make an organization initially aware of a data
 compromise?
@@ -3391,15 +1944,6 @@ perspective against defined test cases? (Select TWO).
 (F). SDLC
 Answer: B,E
 
-NO.340 The SOC for a large MSSP is meeting to discuss the lessons learned from a recent incident
-that took much too long to resolve This type of incident has become more common in recent weeks
-and is consuming large amounts of the analysts' time due to manual tasks being performed Which of
-the following solutions should the SOC consider to BEST improve its response time?
-Answer: C
-
-SOAR (Security Orchestration, Automation, and Response) Can use either playbook or runbook. It
-assists in collecting threat related data from a range of sources and automate responses to low level
-threats. (frees up some of the CSIRT time)
 NO.341 Which of the following prevents an employee from seeing a colleague who is visting an
 inappropriate website?
 (A). Job roration policy
@@ -3483,16 +2027,6 @@ following solutions would BEST meet the needs of the company?
 (D). Hot backup site
 Answer: B
 
-NO.350 Security analysts are conducting an investigation of an attack that occurred inside the
-organization's network. An attacker was able to connect network traffic between workstation
-throughout the network. The analysts review the following logs:
-The layer 2 address table has hundred of entries similar to the ones above. Which of the following
-attacks has MOST likely occurred?
-(A). SQL injection
-(B). DNS spoofing
-(C). MAC flooding
-(D). ARP poisoning
-Answer: D
 
 NO.351 A company wants to deploy PKI on its Internet-facing website. The applications that are
 currently deployed are:
@@ -3533,154 +2067,6 @@ want to establish a contractually binding agreement?
 (D). AnMOU
 Answer: D
 
-NO.354 A user reports constant lag and performance issues with the wireless network when
-working at a local coffee shop. A security analyst walks the user through an installation of Wireshark
-and get a five-minute pcap to analyze. The analyst observes the following output:
-Which of the following attacks does the analyst MOST likely see in this packet capture?
-(A). Session replay
-(B). Evil twin
-(C). Bluejacking
-(D). ARP poisoning
-Answer: B
-
-https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack
-One of the main purposes of deauthentication used in the hacking community is to force clients to
-connect to an evil twin access point which then can be used to capture network packets transferred
-between the client and the access point.
-NO.355 A security analyst has been tasked with creating a new WiFi network for the company. The
-requirements received by the analyst are as follows:
-* Must be able to differentiate between users connected to WiFi
-* The encryption keys need to change routinely without interrupting the users or forcing
-reauthentication
-* Must be able to integrate with RADIUS
-* Must not have any open SSIDs
-Which of the following options BEST accommodates these requirements?
-(A). WPA2-Enterprise
-(B). WPA3-PSK
-(C). 802.11n
-(D). WPS
-Answer: A
-
-NO.356 Which of the following control Types would be BEST to use in an accounting department to
-reduce losses from fraudulent transactions?
-(A). Recovery
-(B). Deterrent
-(C). Corrective
-(D). Detective
-Answer: C
-
-Corrective controls are implemented after detective controls to rectify the problem and (ideally)
-prevent it from happening again.
-NO.357 Aweb server administrator has redundant servers and needs to ensure failover to the
-secondary server when the primary server goes down. Which of the following should the
-administrator implement to avoid disruption?
-(A). NIC teaming
-(B). High availability
-(C). Dual power supply
-(D). laaS
-Answer: B
-
-NO.358 Developers are writing code and merging it into shared repositones several times a day,
-where it is tested automabecally. Which of the following concepts does this BEST represent?
-(A). Functional testing
-(B). Stored procedures
-(C). Elasticity
-(D). Continuous integration
-Answer: C
-
-NO.359 Which of the following allows for functional test data to be used in new systems for testing
-and training purposes to protect the read data?
-(A). Data encryption
-(B). Data masking
-(C). Data deduplication
-(D). Data minimization
-Answer: B
-
-NO.360 A ecurily analyst b concemed alout iratic initiated to he dark web fom the corporate LAN.
-Which of the folowing motworks should he analyst monior?
-(A). SFTP
-(B). AS
-(C). Tor
-(D). LoC
-Answer: C
-
-NO.361 The Spread of misinformation sorrounding the outbreak of a novel on election day led to
-eligible voters choosing not take risk of going to the polls.
-This is an example of:
-(A). Prepending
-(B). An inflence campaign
-(C). A watering-hole attack
-(D). Itimidation
-(E). Information elicition
-Answer: D
-
-NO.362 A backdoor was detected on the containerized application environment. The investigation
-detected that a zero-day vulnerability was introduced when the latest container image version was
-downloaded from a public registry. Which of the following is the BEST solution to prevent this type of
-incident from occurring again?
-(A). Enforce the use of a controlled trusted source of container images
-(B). Deploy an IPS solution capable of detecting signatures of attacks targeting containers
-(C). Define a vulnerability scan to assess container images before being introduced on the
-environment
-(D). Create a dedicated VPC for the containerized environment
-Answer: D
-
-NO.363 An organization has hired a security analyst to perform a penetration test. The analyst
-captures 1Gb worth of inbound network traffic to the server and transfer the pcap back to the
-machine for analysis. Which of the following tools should the analyst use to further review the pcap?
-(A). Nmap
-(B). cURL
-(C). Netcat
-(D). Wireshark
-Answer: D
-
-https://www.comparitech.com/net-admin/pcapguide/#:~:text=Packet%20Capture%20or%20PCAP%20(also,packet%20data%20from%20a%20networ
-k.
-NO.364 An enterpnse has hired an outside security firm to facilitate penetration testing on its
-network and applications. The firm has agreed to pay for each vulnerability that ts discovered. Which
-of the following BEST represents the type of testing that is being used?
-(A). White-box
-(B). Red-leam
-(C). Bug bounty
-(D). Gray-box
-(E). Black-box
-Answer: A
-
-NO.365 A security researcher has aferted an organuzation that its sensifive user data was found for
-sale on a website. Which af the followang should the organzabon use to inform the affected partes?
-(A). A An incident response plan
-(B). A communications plan
-(C). A business continuity plan
-(D). A disaster recovery plan
-Answer: A
-
-NO.366 After reluming from a conference, a user's laptop has been operating slower than normal
-and overheating and the fans have been running constantly Dunng the diagnosis process, an
-unknown piece of hardware is found connected to the laptop's motherboard Which of the following
-attack vectors was exploited to install the hardware?
-(A). Removable media
-(B). Spear phishing
-(C). Supply chain
-(D). Direct access
-Answer: D
-
-NO.367 Several employees have noticed other bystanders can clearly observe a terminal where
-passcodes are being entered, Which of the following can be eliminated with the use of a privacy
-screen?
-(A). Shoulder surfing
-(B). Spear phishing
-(C). Impersonation attack
-(D). Card cloning
-Answer: A
-
-NO.368 A security administrator is trying to determine whether a server is vulnerable to a range of
-attacks. After using a tool, the administrator obtains the following output:
-Which of the following attacks was successfully implemented based on the output?
-(A). Memory leak
-(B). Race conditions
-(C). SQL injection
-(D). Directory traversal
-Answer: D
 
 NO.369 During an investigation, the incident response team discovers that multiple administrator
 accounts were suspected of being compromised. The host audit logs indicate a repeated brute-force
@@ -3701,7 +2087,7 @@ prevent this type of attack?
 (B). Impossible travel time
 (C). Geolocation
 (D). Geofencing
-Answer: D
+Answer: B
 
 NO.371 Which of the following is required in order for an IDS and a WAF to be effective on HTTPS
 traffic?
@@ -3709,7 +2095,7 @@ traffic?
 (B). DNS sinkhole
 (C). TLS inspection
 (D). Data masking
-Answer: B
+Answer: C
 
 NO.372 An analyst needs to set up a method for securely transferring files between systems. One of
 the requirements is to authenticate the IP header and the payload. Which of the following services
@@ -3777,15 +2163,6 @@ following would BEST help the team ensure the application is ready to be release
 (D). Submit the application to QA before releasing it.
 Answer: D
 
-NO.379 A bank detects fraudulent activity on user's account. The user confirms transactions
-completed yesterday on the bank's website at https:/Awww.company.com. A security analyst then
-examines the user's Internet usage logs and observes the following output:
-Which of the following has MOST likely occurred?
-(A). Replay attack
-(B). SQL injection
-(C). SSL stripping
-(D). Race conditions
-Answer: A
 
 NO.380 An organization is migrating several SaaS applications that support SSO. The security
 manager wants to ensure the migration is completed securely. Which of the following should the
@@ -3858,135 +2235,6 @@ own credentials to log in to the trusted partner's website?
 (C). Federation
 (D). Multifactor authentication
 Answer: C
-
-NO.387 A security analyst is reviewing application logs to determine the source of a breach and
-locates the following log:
-Which Of the following has been observed?
-(A). DLL Injection
-(B). API attack
-(C). SQLI
-(D). XSS
-Answer: C
-
-NO.388 A network administrator has been alerted that web pages are experiencing long load times.
-After determining it is not a routing or DNS issue, the administrator logs in to the router, runs a
-command, and receives the following output:
-Which of the following is the router experiencing?
-(A). DDoS attack
-(B). Memory leak
-(C). Buffer overflow
-(D). Resource exhaustion
-Answer: D
-
-NO.389 A security analyst is reviewing the following command-line output:
-Which of the following Is the analyst observing?
-(A). IGMP spoofing
-(B). URL redirection
-(C). MAG address cloning
-(D). DNS poisoning
-Answer: C
-
-NO.390 A company's Chief Information Office (CIO) is meeting with the Chief Information Security
-Officer (CISO) to plan some activities to enhance the skill levels of the company's developers. Which
-of the following would be MOST suitable for training the developers'?
-(A). A capture-the-flag competition
-(B). A phishing simulation
-(C). Physical security training
-(D). Baste awareness training
-Answer: B
-
-NO.391 An n that has a large number of mobile devices is explonng enhanced secunty controls to
-manage unauthonzed access if a device is lost or stolen. Specifically, a mobile devices are mor than
-dmi (4 8km) from the busding, the management team would like to have the secunty team alerted
-and server resources restricted on those devices. Which of the following controls should the
-organization implement?
-(A). Geofencing
-(B). Lockout
-(C). Near-field communication
-(D). GPS tagging
-Answer: A
-
-NO.392 Which of the following BEST helps to demonstrate integrity during a forensic investigation?
-(A). Event logs
-(B). Encryption
-(C). Hashing
-(D). Snapshots
-Answer: C
-
-NO.393 A business operations manager is concerned that a PC that is critical to business operations
-will have a costly hardware failure soon. The manager is looking for options to continue business
-operations without incurring large costs. Which of the following would mitigate the manager's
-concerns?
-(A). Implement a full system upgrade
-(B). Perform a physical-to-virtual migration
-(C). Install uninterruptible power supplies
-(D). Purchase cybersecurity insurance
-Answer: B
-
-NO.394 The CSIRT is reviewing the lessons learned from a recent incident. A worm was able to
-spread unhindered throughout the network and infect a large number of computers and servers.
-Which of the following recommendations would be BEST to mitigate the impacts of a similar incident
-in the future?
-(A). Install a NIDS device at the boundary.
-(B). Segment the network with firewalls.
-(C). Update all antivirus signatures daily.
-(D). Implement application blacklisting
-Answer: B
-
-NO.395 An annual information security assessment has revealed that several OS-level configurations
-are not in compliance due to outdated hardening standards the company is using. Which of the
-following would be BEST to use to update and reconfigure the OS-level security configurations?
-(A). CIS benchmarks
-(B). GDPR guidance
-(C). Regional regulations
-(D). ISO 27001 standards
-Answer: A
-
-https://www.beyondtrust.com/resources/glossary/systems-hardening
-NO.396 A security analyst discovers several .jpg photos from a cellular phone during a forensics
-investigation involving a compromised system. The analyst runs a forensics tool to gather file
-metadat a. Which of the following would be part of the images if all the metadata is still intact?
-(A). The GPS location
-(B). When the file was deleted
-(C). The total number of print jobs
-(D). The number of copies made
-Answer: A
-
-NO.397 Certain users are reporting their accounts are being used to send unauthorized emails and
-conduct suspicious activities. After further investigation, a security analyst notices the following:
-* All users share workstations throughout the day.
-* Endpoint protection was disabled on several workstations throughout the network.
-* Travel times on logins from the affected users are impossible.
-* Sensitive data is being uploaded to external sites.
-* All user account passwords were forced to be reset and the issue continued.
-Which of the following attacks is being used to compromise the user accounts?
-(A). Brute-force
-(B). Keylogger
-(C). Dictionary
-(D). Rainbow
-Answer: B
-
-NO.398 The facilities supervisor for a government agency is concerned about unauthorized access to
-environmental systems in the event the staff WiFi network is breached. Which of the blowing would
-BEST address this security concern?
-(A). install a smart meter on the staff WiFi.
-(B). Place the environmental systems in the same DHCP scope as the staff WiFi.
-(C). Implement Zigbee on the staff WiFi access points.
-(D). Segment the staff WiFi network from the environmental systems network.
-Answer: B
-
-NO.399 The IT department at a university is concerned about professors placing servers on the
-university network in an attempt to bypass security controls. Which of the following BEST represents
-this type of threat?
-(A). A script kiddie
-(B). Shadow IT
-(C). Hacktivism
-(D). White-hat
-Answer: B
-
-NO.400 Which of the following would be the BEST resource for a software developer who is looking
-to improve secure coding practices for web applications?
-Answer: A
 
 NO.401 A systems analyst determines the source of a high number of connections to a web server
 that were initiated by ten different IP addresses that belong to a network block in a specific country.
@@ -4071,14 +2319,6 @@ company's staff. Which of the following would MOST likely help mitigate this iss
 (D). The addition of DNS conditional forwarders
 Answer: C
 
-NO.410 A user's account is constantly being locked out. Upon further review, @ security analyst
-found the following in the SIEM:
-Which of the following describes what is occurring?
-(A). An attacker is utilizing a password-spraying attack against the account
-(B). An attacker is utilizing a dictionary attack against the account
-(C). An attacker is utilizing a brute-force attack against the account
-(D). An attacker is utilizing a rainbow table attack against the account
-Answer: B
 
 NO.411 Which of the following environments can be stood up in a short period of time, utilizes
 either dummy data or actual data, and is used to demonstrate and model system capabilities and
@@ -4089,18 +2329,7 @@ functionality for a fixed, agreed-upon duration of time?
 (D). Development
 Answer: A
 
-NO.412 A security analyst is investigation an incident that was first reported as an issue connecting
-to network shares and the internet, While reviewing logs and tool output, the analyst sees the
-following:
-Which of the following attacks has occurred?
-(A). IP conflict
-(B). Pass-the-hash
-(C). MAC flooding
-(D). Directory traversal
-(E). ARP poisoning
-Answer: E
 
-https://www.radware.com/security/ddos-knowledge-center/ddospedia/arp-poisoning
 NO.413 While reviewing pcap data, a network security analyst is able to locate plaintext usernames
 and passwords being sent from workstations to network witches. Which of the following is the
 security analyst MOST likely observing?
@@ -4281,15 +2510,6 @@ isolated sandbox
 (D). Routing tables have been compromised, and an attacker is rerouting traffic to malicious websites
 Answer: A
 
-NO.430 A user contacts the help desk to report the following:
-Two days ago, a pop-up browser window prompted the user for a name and password after
-connecting to the corporate wireless SSID. This had never happened before, but the user entered the
-information as requested.
-The user was able to access the Internet but had trouble accessing the department share until the
-next day.
-The user is now getting notifications from the bank about unauthorized transactions.
-Which of the following attack vectors was MOST likely used in this scenario?
-Answer: A
 
 NO.431 An organization just experienced a major cyberattack modem. The attack was well
 coordinated sophisticated and highly skilled. Which of the following targeted the organization?
@@ -4375,9 +2595,6 @@ software. Which of the following types of attack does this describe?
 (D). Phishing
 Answer: C
 
-NO.440 The board of doctors at a company contracted with an insurance firm to limit the
-organization's liability. Which of the following risk management practices does the BEST describe?
-Answer: A
 
 NO.441 The manager who is responsible for a data set has asked a security engineer to apply
 encryption to the data on a hard disk. The security engineer is an example of a:
@@ -4471,14 +2688,6 @@ uploading files Which of the following controls should the organization consider
 (D). DLP
 Answer: D
 
-NO.450 A security analyst is reviewing the output of a web server log and notices a particular
-account is attempting to transfer large amounts of money:
-Which of the following types of attack is MOST likely being conducted?
-(A). SQLi
-(B). CSRF
-(C). Session replay
-(D). API
-Answer: C
 
 NO.451 A document that appears to be malicious has been discovered in an email that was sent to a
 company's Chief Financial Officer (CFO). Which of the following would be BEST to allow a security
@@ -4575,37 +2784,6 @@ doing?
 (D). Credentialed vulnerability scanning
 Answer: C
 
-NO.460 Which of the following controls would be the MOST cost-effective and time-efficient to
-deter intrusions at the perimeter of a restricted, remote military training area?
-(Select TWO).
-Answer: A,E
-
-NO.461 The SOC is reviewing process and procedures after a recent incident. The review indicates it
-took more than 30 minutes to determine that quarantining an infected host was the best course of
-action. The allowed the malware to spread to additional hosts before it was contained. Which of the
-following would be BEST to improve the incident response process?
-(A). Updating the playbooks with better decision points
-(B). Dividing the network into trusted and untrusted zones
-(C). Providing additional end-user training on acceptable use
-(D). Implementing manual quarantining of infected hosts
-Answer: A
-
-NO.462 Rapidly infect computers. Once infected, computers are encrypted and held for ransom.
-Which of the following would BEST prevent this attack from reoccurring?
-(A). Configure the perimeter firewall to deny inbound external connections to SMB ports.
-(B). Ensure endpoint detection and response systems are alerting on suspicious SMB connections.
-(C). Deny unauthenticated users access to shared network folders.
-(D). Verify computers are set to install monthly operating system, updates automatically
-Answer: A
-
-NO.463 During an incident response, a security analyst observes the following log entry on the web
-server.
-Which of the following BEST describes the type of attack the analyst is experience?
-(A). SQL injection
-(B). Cross-site scripting
-(C). Pass-the-hash
-(D). Directory traversal
-Answer: D
 
 NO.464 A Chief Security Officer is looking for a solution that can provide increased scalability and
 flexibility for back-end infrastructure, allowing it to be updated and modified without disruption to
@@ -4775,9 +2953,6 @@ executives need to speak to the media after a publicized data breach?
 (D). Disaster recovery plan
 Answer: C
 
-NO.480 A company wants to restrict emailing of PHI documents. The company is implementing a
-DLP solution In order to reslnct PHI documents which of the following should be performed FIRST?
-Answer: C
 
 NO.481 A smart retail business has a local store and a newly established and growing online
 storefront. A recent storm caused a power outage to the business and the local ISP, resulting in
@@ -4880,14 +3055,6 @@ Which of the following does this process BEST protect?
 (D). Data tokenization
 Answer: C
 
-Data at rest: Data at rest is data in its stored or resting state, which is typically on some type of
-persistent storage such as a hard drive or tape. Symmetric encryption is used in this case.
-NO.490 Administrators have allowed employees to access their company email from personal
-computers. However, the administrators are concerned that these computers are another attack
-Surface and can result in user accounts being breached by foreign actors. Which of the following
-actions would provide the MOST secure solution?
-Answer: A
-
 NO.491 Which of the following represents a biometric FRR?
 (A). Authorized users being denied access
 (B). Users failing to enter the correct PIN
@@ -4923,14 +3090,6 @@ an unapproved application to repartition the drives.
 to harvest plaintext credentials from memory.
 Answer: D
 
-NO.495 A network engineer needs to create a plan for upgrading the wireless infrastructure in a
-large office Priority must be given to areas that are currently experiencing latency and connection
-issues. Which of the following would be the BEST resource for determining the order of priority?
-(A). Nmapn
-(B). Heat maps
-(C). Network diagrams
-(D). Wireshark
-Answer: C
 
 NO.496 Select the appropriate attack and remediation from each drop-down list to label the
 corresponding attack with its remediation.
@@ -4960,16 +3119,6 @@ United States federal information systems?
 (D). NIST 800-53
 Answer: D
 
-NO.499 A security analyst receives a SIEM alert that someone logged in to the appadmin test
-account, which is only used for the early detection of attacks. The security analyst then reviews the
-following application log:
-Which of the following can the security analyst conclude?
-(A). A replay attack is being conducted against the application.
-(B). An injection attack is being conducted against a user authentication system.
-(C). A service account password may have been changed, resulting in continuous failed logins within
-the application.
-(D). A credentialed vulnerability scanner attack is testing several CVEs against the application.
-Answer: C
 
 NO.500 A third party asked a user to share a public key for secure communication. Which of the
 following file formats should the user choose to share the key?
@@ -5026,13 +3175,6 @@ breach occurred through each device?
 (D). Bandwidth monitors and interface sensors
 Answer: A
 
-testing exercise?
-(A). White team
-(B). Purple team
-(C). Green team
-(D). Blue team
-(E). Red team
-Answer: D
 
 NO.506 A report delivered to the Chief Information Security Officer (CISO) shows that some user
 credentials could be exfilltrated. The report also indicates that users tend to choose the same
@@ -5073,173 +3215,6 @@ of the following will BEST assist with this investigation?
 (D). Require access to the routers to view current sessions,
 Answer: C
 
-NO.510 An employee received multiple messages on a mobile device. The messages instructing the
-employee to pair the device to an unknown device. Which of the following BEST describes What a
-malicious person might be doing to cause this issue to occur?
-Answer: D
-
-NO.511 An attacker was eavesdropping on a user who was shopping online. The attacker was able
-to spoof the IP address associated with the shopping site. Later, the user received an email regarding
-the credit card statement with unusual purchases. Which of the following attacks took place?
-(A). On-path attack
-(B). Protocol poisoning
-(C). Domain hijacking
-(D). Bluejacking
-Answer: A
-
-NO.512 Which of the following should an organization consider implementing In the event
-executives need to speak to the media after a publicized data breach?
-(A). Incident response plan
-(B). Business continuity plan
-(C). Communication plan
-(D). Disaster recovery plan
-Answer: D
-
-NO.513 Which of the following supplies non-repudiation during a forensics investigation?
-(A). Dumping volatile memory contents first
-(B). Duplicating a drive with dd
-(C). Using a SHA-2 signature of a drive image
-(D). Logging everyone in contact with evidence
-(E). Encrypting sensitive data
-Answer: C
-
-NO.514 Which of the following cryptographic concepts would a security engineer utilize while
-implementing non-repudiation? (Select TWO)
-(A). Block cipher
-(B). Hashing
-(C). Private key
-(D). Perfect forward secrecy
-(E). Salting
-(F). Symmetric keys
-Answer: B,C
-
-NO.515 Which of the following techniques eliminates the use of rainbow tables for password
-cracking?
-(A). Hashing
-(B). Tokenization
-(C). Asymmetric encryption
-(D). Salting
-Answer: D
-
-Rainbow table attacks can easily be prevented by using salt techniques, which is a random data that
-is passed into the hash function along with the plain text.
-NO.516 During an intemal penetration test, a security analyst identified a network device that had
-accepted cleartext authentication and was configured with a default credential. Which of the
-following recommendations should the security analyst make to secure this device?
-(A). Configure SNMPv1.
-(B). Configure SNMPv2c
-(C). Configure SNMPv3.
-(D). Configure the default community string.
-Answer: D
-
-NO.517 A security analyst is running a vulnerability scan to check for missing patches during a
-suspected security rodent During which of the following phases of the response process is this
-activity MOST likely occurring?
-(A). Containment
-(B). Identification
-(C). Recovery
-(D). Preparation
-Answer: B
-
-NO.518 The concept of connecting a user account across the systems of multiple enterprises is BEST
-known as:
-(A). federation.
-(B). a remote access policy.
-(C). multifactor authentication.
-(D). single sign-on.
-Answer: D
-
-NO.519 Which of the following BEST explains the reason why a server administrator would place a
-document named password.txt on the desktop of an administrator account on a server?
-(A). The document is a honeyfile and is meant to attract the attention of a cyberintruder.
-(B). The document is a backup file if the system needs to be recovered.
-(C). The document is a standard file that the OS needs to verify the login credentials.
-(D). The document is a keylogger that stores all keystrokes should the account be compromised.
-Answer: A
-
-NO.520 The human resources department of a large online retailer has received multiple customer
-complaints about the rudeness of the automated chatbots it uses to interface and assist online
-shoppers. The system, which continuously learns and adapts, was working fine when it was installed
-a few months ago. Which of the following BEST describes the method being used to exploit the
-system?
-Answer: C
-
-NO.521 Which of the following BEST describes the method a security analyst would use to confirm a
-file that is downloaded from a trusted security website is not altered in transit or corrupted using a
-verified checksum?
-(A). Hashing
-(B). Salting
-(C). Integrity
-(D). Digital signature
-Answer: C
-
-NO.522 Which of the following uses SAML for authentication?
-(A). TOTP
-(B). Federation
-(C). Kerberos
-(D). HOTP
-Answer: B
-
-NO.523 During an incident response, an analyst applied rules to all inbound traffic on the border
-firewall and implemented ACLs on each critical server Following an investigation, the company
-realizes it is still vulnerable because outbound traffic is not restricted and the adversary is able lo
-maintain a presence in the network. In which of the following stages of the Cyber Kill Chain is the
-adversary currently operating?
-(A). Reconnaissance
-(B). Command and control
-(C). Actions on objective
-(D). Exploitation
-Answer: B
-
-NO.524 A Chief Information Security Officer (CISO) needs to create a policy set that meets
-international standards for data privacy and sharing. Which of the following should the CISO read and
-understand before writing the policies?
-(A). PCI DSS
-(B). GDPR
-(C). NIST
-(D). ISO 31000
-Answer: B
-
-NO.525 A security assessment determines DES and 3DES at still being used on recently deployed
-production servers. Which of the following did the assessment identify?
-(A). Unsecme protocols
-(B). Default settings
-(C). Open permissions
-(D). Weak encryption
-Answer: D
-
-NO.526 Which of the following is the correct order of volatility from MOST to LEAST volatile? >
-(A). Memory, temporary filesystems, routing tables, disk, network storage
-(B). Cache, memory, temporary filesystems, disk, archival media
-(C). Memory, disk, temporary filesystems, cache, archival media
-(D). Cache, disk, temporary filesystems, network storage, archival media
-Answer: B
-
-NO.527 A security analyst must detenmine If elther SSH er Telnet ts being used to lng in bo servers.
-Which of the following should the analyst use?
-(A). legger
-(B). Metarup) ost
-(C). tepdump
-(D). netetat
-Answer: D
-
-NO.528 A security engineer at an offline government facility is concerned about the validity of an
-SSL certificate. The engineer wants to perform the fastest check with the least delay to determine if
-the certificate has been revoked. Which of the following would BEST these requirement?
-(A). RA
-(B). OCSP
-(C). CRL
-(D). CSR
-Answer: C
-
-NO.529 A security administrator checks the table of a network switch, which shows the following
-output:
-Which of the following is happening to this switch?
-(A). MAC Flooding
-(B). DNS poisoning
-(C). MAC cloning
-(D). ARP poisoning
-Answer: A
 
 NO.530 Which of the following should customers who are involved with Ul developer agreements
 be concerned with when considering the use of these products on highly sensitive projects?
@@ -5351,14 +3326,6 @@ Which of the following attacks is MOST likely being detected?
 (D). Session replay
 Answer: A
 
-NO.540 An organization maintains several environments in which patches are developed and tested
-before deployed to an operation status. Which of the following is the environment in which patches
-will be deployed just prior to being put into an operational status?
-Answer: D
-
-The staging environment is an optional environment, but it is commonly used when an organization
-has multiple production environments. After passing testing, the system moves into staging, from
-where it can be deployed to the different production systems.
 NO.541 The Chief Executive Officer (CEO) of an organization would like staff members to have the
 flexibility to work from home anytime during business hours, incident during a pandemic or crisis,
 However, the CEO is concerned that some staff members may take advantage of the of the flexibility
@@ -5457,10 +3424,6 @@ WHICH OF THE FOLLOWING BEST DESCRIBE THE SOLUTION THE ANALYST SHOULD PERSUE?
 (D). PEER-REVIEWED CONTENT
 Answer: B
 
-NO.550 A database administrator wants to grant access to an application that will be reading and
-writing data to a database. The database is shared by other applications also used by the finance
-department Which of the following account types Is MOST appropriate for this purpose?
-Answer: A
 
 NO.551 A new plug-and-play storage device was installed on a PC in the corporate environment.
 Which of the following safeguards will BEST help to protect the PC from malicious files on the storage
@@ -5547,8 +3510,6 @@ NO.559 Which of the following algorithms has the SMALLEST key size?
 (D). AES
 Answer: B
 
-NO.560 Which of the following is a cryptographic concept that operates on a fixed length of bits?
-Answer: A
 
 Single-key or symmetric-key encryption algorithms create a fixed length of bits known as a block
 cipher with a secret key that the creator/sender uses to encipher data (encryption) and the receiver
@@ -5590,15 +3551,6 @@ following should the CISO choose?
 (D). Web-application firewall
 Answer: A
 
-NO.564 A user reports trouble using a corporate laptop. The laptop freezes and responds slowly
-when writing documents and the mouse pointer occasional disappears.
-The task list shows the following results
-Which of the following is MOST likely the issue?
-(A). RAT
-(B). PUP
-(C). Spyware
-(D). Keylogger
-Answer: A
 
 NO.565 The Chief Technology Officer of a local college would like visitors to utilize the school's WiFi
 but must be able to associate potential malicious activity to a specific person. Which of the following
@@ -5742,9 +3694,6 @@ hands-on set of security standards MOST likely choose?
 (D). Is0 37000
 Answer: A
 
-NO.580 Which of the following BEST describes when an organization utilizes a ready-to-use
-application from a cloud provider?
-Answer: B
 
 SaaS, or software as a service, is on-demand access to ready-to-use, cloud-hosted application
 software.
@@ -5756,15 +3705,6 @@ NO.581 Which of the following explains why RTO is included in a BIA?
 (D). It informs the backup approach so that the organization can recover data to a known time.
 Answer: A
 
-NO.582 A customer has reported that an organization's website displayed an image of a smiley (ace
-rather than the expected web page for a short time two days earlier. A security analyst reviews log
-tries and sees the following around the lime of the incident:
-Which of the following is MOST likely occurring?
-(A). Invalid trust chain
-(B). Domain hijacking
-(C). DNS poisoning
-(D). URL redirection
-Answer: C
 
 NO.583 A security analyst discovers that a company username and password database was posted
 on an internet forum. The username and passwords are stored in plan text. Which of the following
@@ -5785,14 +3725,6 @@ unsecured. Which of the following types of data does this combination BEST repre
 (D). Proprietary data
 Answer: A
 
-NO.585 During a forensic investigation, a security analyst discovered that the following command
-was run on a compromised host:
-Which of the following attacks occurred?
-(A). Buffer overflow
-(B). Pass the hash
-(C). SQL injection
-(D). Replay attack
-Answer: B
 
 NO.586 The Chief Security Officer (CSO) at a major hospital wants to implement SSO to help improve
 in the environment patient data, particularly at shared terminals. The Chief Risk Officer (CRO) is
@@ -5941,11 +3873,6 @@ the following can be used?
 (D). SRTP
 Answer: B
 
-NO.600 After a recent security breach a security analyst reports that several admimstratrve
-usemames and passwords are being sent via cieartext across the network to access network devices
-over prot 23 Which of the following should be implemented so all credentials sent over the network
-are encrypted when remotely accessing and configunng network devices?
-Answer: A
 
 NO.601 An engineer wants to inspect traffic to a cluster of web servers in a cloud environment.
 Which of the following solutions should the engineer implement?
@@ -6034,11 +3961,6 @@ NO.609 Digital signatures use asymmetric encryption. This means the message is e
 (D). the sender's public key and decrypted with the recipient's private key
 Answer: C
 
-NO.610 A Chief Security Officer (CSO) is concerned about the volume and integrity of sensitive
-information that is exchanged between the organization and a third party through email. The CSO is
-particularly concerned about an unauthorized party who is intercepting information that is in transit
-between the two organizations. Which of the following would address the CSO's concerns?
-Answer: E
 
 NO.611 A penetration tester was able to compromise an internal server and is now trying to pivot
 the current session in a network lateral movement Which of the following tools if available on the
@@ -6068,16 +3990,6 @@ repository. provicing enterprise consumers access to structured threat intellige
 (D). TAXII
 Answer: B
 
-NO.614 While reviewing the wireless router, a systems administrator of a small business determines
-someone is spoofing the MAC address of an authorized device.
-Given the table below:
-Which of the following should be the administrator's NEXT step to detect if there is a rague system
-without impacting availability?
-(A). Conduct a ping sweep.
-(B). Physically check each system.
-(C). Deny Internet access to the "UNKNOWN" hostname.
-(D). Apply MAC filtering.
-Answer: D
 
 NO.615 A security analyst is evaluating the risks of authorizing multiple security solutions to collect
 data from the company's cloud environment Which of the following is an immediate consequence of
@@ -6128,20 +4040,8 @@ authentication?
 (B). Retina scan
 (C). SMS text
 (D). Keypad PIN
-Answer: B
+Answer: D
 
-NO.620 Joe, a security analyst, recently performed a network discovery to fully understand his
-organization's electronic footprint from a "public" perspective. Joe ran a set of commands and
-received the following output:
-Which of the following can be determined about the organization's public presence and security
-posture? (Select TWO).
-(A). Joe used Whois to produce this output.
-(B). Joe used cURL to produce this output.
-(C). Joe used Wireshark to produce this output.
-(D). The organization has adequate information available in public registration.
-E: The organization has too much information available in public registration.
-(E). The organization has too little information available in public registration.
-Answer: A,D
 
 NO.621 A new vulnerability in the SMB protocol on the Windows systems was recently discovered,
 but no patches are currently available to resolve the issue. The security administrator is concerned tf
@@ -6157,15 +4057,6 @@ connections to the DMZ as a workaround to protect the servers? (Select TWO).
 (F). 445
 Answer: A,E
 
-NO.622 A security analyst was asked to evaluate a potential attack that occurred on a publicly
-accessible section of the company's website The malicious actor posted an entry in an attempt to
-trick users into cltckmg the following:
-Which of the following was MOST likely observed?
-(A). DLL injection
-(B). Session replay
-(C). SOLI
-(D). XSS
-Answer: B
 
 NO.623 A company reduced the area utilized in its datacenter by creating virtual networking
 through automation and by creating provisioning routes and rules through scripting. Which of the
@@ -6295,155 +4186,6 @@ perform to understand the threat and retrieve possible IoCs?
 (D). Use netstat to check whether communication has been made with a remote host
 Answer: B
 
-NO.637 A cybersecurity analyst reviews the log files from a web server and sees a series of files that
-indicates a directory-traversal attack has occurred. Which of the following is the analyst MOST likely
-seeing?
-A)
-B)
-C)
-D)
-(A). Option A
-(B). Option B
-(C). Option C
-(D). Option D
-Answer: B
-
-NO.638 An attacker has successfully exfiltrated several non-salted password hashes from an online
-system. Given the logs below:
-Which of the following BEST describes the type of password attack the attacker is performing?
-(A). Dictionary
-(B). Pass-the-hash
-(C). Brute-force
-(D). Password spraying
-Answer: A
-
-NO.639 A junior security analyst iss conducting an analysis after passwords were changed on
-multiple accounts without users' interaction. The SIEM have multiple logtn entnes with the following
-text:
-Which of Ihe following is the MOST likely attack conducted on the environment?
-(A). Malicious script
-(B). Privilege escalation
-(C). Doman hijacking
-(D). DNS poisoning
-Answer: A
-
-NO.640 Several users have opened tickets with the help desk. The help desk has reassigned the
-tickets to a secunty analyst for further review The security analyst reviews the following metrics:
-Which of the following is MOST likely the result of the security analyst's review?
-(A). The ISP is dropping outbound connections
-(B). The user of the Sales-PC fell for a phishing attack
-(C). Corporate PCs have been turned into a botnet
-(D). An on-path attack is taking place between PCs and the router
-Answer: D
-
-NO.641 To secure an application after a large data breach, an e-commerce site will be resetting all
-users' credentials.
-Which of the following will BEST ensure the site's users are not compromised after the reset?
-(A). A password reuse policy
-(B). Account lockout after three failed attempts
-(C). Encrypted credentials in transit
-(D). A geofencing policy based on login history
-Answer: C
-
-NO.642 An organization suffered an outage and a critical system took 90 minutes to come back
-online. Though there was no data loss during the outage, the expectation was that the critical system
-would be available again within 60 minutes Which of the following is the 60-minute expectation an
-example of:
-(A). MTBF
-(B). RPO
-(C). MTTR
-(D). RTO
-Answer: D
-
-https://www.enterprisestorageforum.com/management/rpo-and-rto-understanding-thedifferences/
-NO.643 Which of the following is the GREATEST security concern when outsourcing code
-development to third-party contractors for an internet-facing application?
-(A). Intellectual property theft
-(B). Elevated privileges
-(C). Unknown backdoor
-(D). Quality assurance
-Answer: C
-
-NO.644 Asecurity analyst is reviewing a penetration-testing report from a third-party contractor.
-The penetration testers used the organization's new API to bypass a driver to perform privilege
-escalation on the organization's web servers. Upon looking at the API, the security analyst realizes
-the particular API call was to a legacy system running an outdated OS. Which of the following is the
-MOST likely attack type?
-(A). Request forgery
-(B). Session replay
-(C). DLL injection
-(D). Shimming
-Answer: A
-
-NO.645 A COMPANY HAS DESCOVERED UNA mans DEVICE ARE USING ITS WIFI NETWORK, AND IT
-WANTS TO HARDEN THE ACCESS POINT TO IMPROVE SECURITY WHICH OF THE FOLLOWING
-CONFIGURATIONS SHOULD AN ANALYST ENABLE TO EMPROVE SECURITY? ( SELECT TWO)
-(A). RADIUS
-(B). PEAP
-(C). WPS
-(D). WEP-TKIP
-(E). SSL
-(F). WPA2-PSK
-Answer: D,F
-
-NO.646 Server administrator want to configure a cloud solution so that computing memory and
-processor usage is maximized most efficiently acress a number of virtual servers. They also need to
-avoid potential denial-of-service situations caused by availiability. Which of the following should
-administrator configure to maximize system availability while efficiently utilizing available computing
-power?
-(A). Dynamic resource allocation
-(B). High availability
-(C). Segmentation
-(D). Container security
-Answer: C
-
-NO.647 Which of the following would be indicative of a hidden audio file found inside of a piece of
-source code?
-(A). Steganography
-(B). Homomotphic encryption
-(C). Cipher surte
-(D). Blockchain
-Answer: A
-
-Steganography is the technique of hiding secret data within an ordinary, non-secret, file or message
-in order to avoid detection; the secret data is then extracted at its destination. The use of
-steganography can be combined with encryption as an extra step for hiding or protecting data. The
-word steganography is derived from the Greek words steganos (meaning hidden or covered) and the
-Greek root graph (meaning to write).
-NO.648 In which of the following common use cases would steganography be employed?
-(A). Obfuscation
-(B). Integrity
-(C). Non-repudiation
-(D). Blockchain
-Answer: A
-
-NO.649 A security team will be outsourcing several key functions to a third party and will require
-that:
-* Several of the functions will carry an audit burden.
-* Attestations will be performed several times a year.
-* Reports will be generated on a monthly basis.
-Which of the following BEST describes the document that is used to define these requirements and
-stipulate how and when they are performed by the third party?
-(A). MOU
-(B). AUP
-(C). SLA
-(D). MSA
-Answer: C
-
-A service level agreement (SLA) is a contract between a service provider and a customer that outlines
-the services that are to be provided and the expected levels of performance. It is used to define the
-requirements for the service, including any attestations and reports that must be generated, and the
-timescales in which these must be completed. It also outlines any penalties for failing to meet these
-requirements. SLAs are essential for ensuring that third-party services are meeting the agreed upon
-performance levels.
-Reference:
-CompTIA Security+ Get Certified Get Ahead: SY0-601 Study Guide by Darril Gibson
-https://www.amazon.com/CompTIA-Security-Certified-Ahead-SY0-601/dp/1260117558 Note: SLA is
-the best document that is used to define these requirements and stipulate how and when they are
-performed by the third party.
-NO.650 Which of tre following would BEST identity and remediate a catatoss event in an enterprise
-using third-pany, web-based services and file-sharing platanmns?
-Answer: B
 
 NO.651 Which of the following disaster recovery tests is The LEAST time-consuming for the disaster
 recovery team?
@@ -6626,19 +4368,6 @@ considered FIRST to keep the network secure?
 (D). Communication protocols
 Answer: D
 
-NO.670 A SOC is currently being outsourced. Which of the following is being used?
-Answer: C
-
-NO.671 A security analyst is investigating an incident to determine what an attacker was able to do
-on a compromised laptop. The analyst reviews the following SIEM log:
-Which of the following describes the method that was used to compromise the laptop?
-(A). An attacker was able to move laterally from PC1 to PC2 using a pass-the-hash attack
-(B). An attacker was able to bypass application whitelisting by emailing a spreadsheet attachment
-with an embedded PowerShell in the file
-(C). An attacker was able to install malware to the CAasdf234 folder and use it to gam administrator
-nights and launch Outlook
-(D). An attacker was able to phish user credentials successfully from an Outlook user profile
-Answer: A
 
 NO.672 A user enters a username and a password at the login screen for a web portal. A few
 seconds later the following message appears on the screen: Please use a combination of numbers,
@@ -6650,18 +4379,6 @@ message describe?
 (D). Password age
 Answer: A
 
-NO.673 After a recent security incident, a security analyst discovered that unnecessary ports were
-open on a firewall policy for a web server. Which of the following firewall policies would be MOST
-secure for a web server?
-A)
-B)
-C)
-D)
-(A). Option A
-(B). Option B
-(C). Option C
-(D). Option D
-Answer: D
 
 NO.674 A software developer needs to perform code-execution testing, black-box testing, and nonfunctional testing on a new product before its general release. Which of the following BEST describes
 the tasks the developer is conducting?
@@ -6812,32 +4529,6 @@ what the company should purchase to ensure its critical servers and network devi
 (D). APDU
 Answer: B
 
-NO.690 A Chief Security Officer (CSO) is concerned about the amount of PII that is stored locally on
-each salesperson's laptop. The sales department has a higher-than-average rate of lost equipment.
-Which of the following recommendations would BEST address the CSO's concern?
-Answer: B
-
-NO.691 DRAG DROP
-An attack has occurred against a company.
-INSTRUCTIONS
-You have been tasked to do the following:
-Identify the type of attack that is occurring on the network by clicking on the attacker's tablet and
-reviewing the output. (Answer Area 1).
-Identify which compensating controls should be implemented on the assets, in order to reduce the
-effectiveness of future attacks by dragging them to the correct server.
-(Answer area 2) All objects will be used, but not all placeholders may be filled. Objects may only be
-used once.
-If at any time you would like to bring back the initial state of the simulation, please click the Reset All
-button.
-Answer:
-
-NO.692 A security analyst is reviewing logs on a server and observes the following output:
-Which of the following is the security analyst observing?
-(A). A rainbow table attack
-(B). A password-spraying attack
-(C). A dictionary attack
-(D). A keylogger attack
-Answer: C
 
 NO.693 An IT manager is estimating the mobile device budget for the upcoming year Over the last
 five years, the number of devices that were replaced due to loss damage or theft steadily increased
@@ -6993,9 +4684,6 @@ groups. Which of the following would MOST likely meet the organizations requirem
 (D). Implement a TAXII server
 Answer: B
 
-NO.710 A network administrator needs to build out a new datacenter, with a focus on resiliency and
-uptime. Which of the following would BEST meet this objective? (Choose two.)
-Answer: A,B
 
 https://searchdatacenter.techtarget.com/definition/resiliency
 NO.711 A security analyst has been reading about a newly discovered cyberattack from a known
@@ -7068,15 +4756,6 @@ Which of the following should the administrator use?
 (D). logger
 Answer: A
 
-NO.719 Security analysts notice a server login from a user who has been on vacation for two weeks
-The analysts confirm that the user did not log in to the system while on vacation After reviewing
-packet capture logs, the analysts notice the following:
-Which of the following occurred?
-(A). A buffer overflow was exploited to gain unauthorized access
-(B). The user's account was compromised, and an attacker changed the login credentials
-(C). An attacker used a pass-the-hash attack to gain access
-(D). An insider threat with username smithJA logged in to the account
-Answer: B
 
 NO.720 Which of the following is a team of people dedicated testing the effectiveness of
 organizational security programs by emulating the techniques of potential attackers?
@@ -7103,14 +4782,6 @@ where it is tested automatically. Which of the following concepts does this BEST
 (D). Continuous integration
 Answer: C
 
-NO.723 Against the recommendation of the IT security analyst, a company set all user passwords on
-a server as "P@)55wOrD". Upon review of the /etc/pesswa file, an attacker found the following:
-hich of the following BEST explains why the encrypted passwords do not match?
-(A). Perfect forward secrecy
-(B). Key stretching
-(C). Salting
-(D). Hashing
-Answer: C
 
 NO.724 When selecting a technical solution for identity management, an architect chooses to go
 from an in-house to a third-party SaaS provider. Which of the following risk management strategies is
@@ -7280,14 +4951,7 @@ the CSO's objectives?
 (D). Virtual network segmentation
 Answer: A
 
-E; Container security
-NO.739 An incident has occurred in the production environment.
-Analyze the command outputs and identify the type of compromise.
-If at any time you would like to bring back the initial state of the simulation, please click the Reset All
-button.
-Answer:
 
-Answer as SQL injection
 NO.740 A malicious actor recently penetration a company's network and moved laterally to the
 datacenter. Upon investigation, a forensics firm wants to know was in the memory on the
 compromised server. Which of the following files should be given to the forensics firm?
@@ -7390,330 +5054,6 @@ likely source of the breach?
 (D). Malware
 Answer: C
 
-NO.750 A security analyst needs to generate a server certificate to be used for 802.1X and secure
-RDP connections. The analyst is unsure what is required to perform the task and solicits help from a
-senior colleague. Which of the following is the FIRST step the senior colleague will most likely tell the
-analyst to perform to accomplish this task?
-Answer: B
-
-A certificate signing request (CSR) is one of the first steps towards getting your own SSL/TLS
-certificate. Generated on the same server you plan to install the certificate on, the CSR contains
-information (e.g. common name, organization, country) the Certificate Authority (CA) will use to
-create your certificate. It also contains the public key that will be included in your certificate and is
-signed with the corresponding private key. We'll go into more details on the roles of these keys
-below.
-NO.751 A security incident has been resolved Which of the following BEST describes the importance
-of the final phase of the incident response plan?
-(A). It examines and documents how well the team responded discovers what caused the incident,
-and determines how the incident can be avoided in the future
-(B). It returns the affected systems back into production once systems have been fully patched, data
-restored and vulnerabilities addressed
-(C). It identifies the incident and the scope of the breach how it affects the production environment,
-and the ingress point
-(D). It contains the affected systems and disconnects them from the network, preventing further
-spread of the attack or breach
-Answer: A
-
-NO.752 After a hardware incident, an unplanned emergency maintenance activity was conducted to
-rectify the issue. Multiple alerts were generated on the SIEM during this period of time. Which of the
-following BEST explains what happened?
-(A). The unexpected traffic correlated against multiple rules, generating multiple alerts.
-(B). Multiple alerts were generated due to an attack occurring at the same time.
-(C). An error in the correlation rules triggered multiple alerts.
-(D). The SIEM was unable to correlate the rules, triggering the alerts.
-Answer: A
-
-NO.753 A systems administrator is looking for a solution that will help prevent OAuth applications
-from being leveraged by hackers to tick users into authonzing the use of their corporate credentials.
-Which of the following BEST describes this solution?
-(A). CASB
-(B). UEM
-(C). WAF
-(D). VPC
-Answer: B
-
-NO.754 A company wants to simplify the certificate management process. The company has a single
-domain with several dozen subdomains, all of which are publicly accessible on the internet. Which of
-the following BEST describes the type of certificate the company should implement?
-(A). Subject alternative name
-(B). Wildcard
-(C). Self-signed
-(D). Domain validation
-Answer: B
-
-Wildcard SSL certificates are for a single domain and all its subdomains. A subdomain is under the
-umbrella of the main domain. Usually subdomains will have an address that begins with something
-other than 'www.' For example, www.cloudflare.com has a number of subdomains, including
-blog.cloudflare.com, support.cloudflare.com, and developers.cloudflare.com. Each is a subdomain
-under the main cloudflare.com domain.
-A single Wildcard SSL certificate can apply to all of these subdomains. Any subdomain will be listed in
-the SSL certificate. Users can see a list of subdomains covered by a particular certificate by clicking on
-the padlock in the URL bar of their browser, then clicking on "Certificate" (in Chrome) to view the
-certificate's details.
-https://www.cloudflare.com/learning/ssl/types-of-ssl-certificates/
-NO.755 A company recently added a DR site and is redesigning the network. Users at the DR site are
-having issues browsing websites.
-INSTRUCTIONS
-Click on each firewall to do the following:
-Deny cleartext web traffic.
-Ensure secure management protocols are used. Please Resolve issues at the DR site.
-The ruleset order cannot be modified due to outside constraints.
-If at any time you would like to bring back the initial state of the simulation, please click the Reset All
-button.
-Answer:
-
-Firewall 1:
-DNS Rule - ANY --> ANY --> DNS --> PERMIT
-HTTPS Outbound - 10.0.0.1/24 --> ANY --> HTTPS --> PERMIT
-Management - ANY --> ANY --> SSH --> PERMIT
-HTTPS Inbound - ANY --> ANY --> HTTPS --> PERMIT
-HTTP Inbound - ANY --> ANY --> HTTP --> DENY
-Firewall 2: No changes should be made to this firewall
-Firewall 3:
-DNS Rule - ANY --> ANY --> DNS --> PERMIT
-HTTPS Outbound - 192.168.0.1/24 --> ANY --> HTTPS --> PERMIT
-Management - ANY --> ANY --> SSH --> PERMIT
-HTTPS Inbound - ANY --> ANY --> HTTPS --> PERMIT
-HTTP Inbound - ANY --> ANY --> HTTP --> DENY
-NO.756 user's PC was recently infected by malware. The user has a legacy printer without vendor
-support, and the user's OS is fully patched. The user downloaded a driver package from the Internet.
-No threats were found on the downloaded file, but during file installation, a malicious runtime threat
-was detected. Which of the following is the MOST likely cause of the infection?
-(A). The dnver had malware installed and was refactored upon download to avoid detection
-(B). The user's computer had a rootkit installed that had avoided detection until the new dnver
-overwrote key files.
-(C). The user's antivirus software definitions were out of date and were damaged by the installation
-of the driver.
-(D). The user's computer had been infected with a logic bomb set to run when new dnver was
-installed.
-Answer: A
-
-NO.757 Which of the following describes the ability of code to target a hypervisor from inside
-(A). Fog computing
-(B). VM escape
-(C). Software-defined networking
-(D). Image forgery
-(E). Container breakout
-Answer: B
-
-Virtual machine escape is an exploit in which the attacker runs code on a VM that allows an operating
-system running within it to break out and interact directly with the hypervisor.
-https://whatis.techtarget.com/definition/virtual-machineescape#:~:text=Virtual%20machine%20escape%20is%20an,VMs)%20running%20on%20that%20host.
-NO.758 During an incident response process involving a laptop, a host was identified as the entry
-point for malware. The management team would like to have the laptop restored and given back to
-the user. The cybersecurity analyst would like to continue investigating the intrusion on the host.
-Which of the following would allow the analyst to continue the investigation and also return the
-laptop to the user as soon as possible?
-(A). dd
-(B). memdump
-(C). tcpdump
-(D). head
-Answer: A
-
-NO.759 A new security engineer has started hardening systems. One of the hardening techniques
-the engineer is using involves disabling remote logins to the NAS. Users are now reporting the
-inability to use SCP to transfer files to the NAS, even through the data is still viewable from the user's
-PCs. Which of the following is the most likely cause of this issue?
-(A). TFTP was disabled on the local hosts
-(B). SSH was turned off instead of modifying the configuration file
-(C). Remote login was disabled in the networkd.config instead of using the sshd.conf
-(D). Network services are no longer running on the NAS
-Answer: C
-
-NO.760 A business is looking for a cloud service provider that offers a la carte services, including
-cloud backups, VM elasticity, and secure networking. Which of the following cloud service provider
-types should business engage?
-(A). A laaS
-(B). PaaS
-(C). XaaS
-(D). SaaS
-Answer: B
-
-NO.761 A public relations team will be taking a group of guest on a tour through the facility of a
-large e-commerce company. The day before the tour, the company sends out an email to employees
-to ensure all whiteboars are cleaned and all desks are cleared. The company is MOST likely trying to
-protect against.
-(A). Loss of proprietary information
-(B). Damage to the company's reputation
-(C). Social engineering
-(D). Credential exposure
-Answer: C
-
-NO.762 Business partners are working on a secunty mechanism lo validate transactions securely.
-The requirement is for one company to be responsible for deploying a trusted solution that will
-register and issue artifacts used to sign encrypt, and decrypt transaction files. Which of the following
-is the BEST solution to adopt?
-(A). PKI
-(B). Blockchain
-(C). SAML
-(D). OAuth
-Answer: A
-
-NO.763 A large bank with two geographically dispersed data centers is concerned about major
-power disruptions at both locations Every day each location expenences very bnef outages that last
-for a few seconds However dunng the summer a high risk of intentional brownouts that last up to an
-hour exists particularly at one of the locations near an jndustnal smelter. Which of the following is
-the BEST solution to reduce the risk of data loss?
-(A). Dual supply
-(B). Generator
-(C). PDU
-(D). Daily backups
-Answer: B
-
-NO.764 An organization is concerned that is hosted web servers are not running the most updated
-version of the software. Which of the following would work BEST to help identify potential
-vulnerabilities?
-(A). Hping3 -s comptia, org -p 80
-(B). Nc -1 -v comptia, org -p 80
-(C). nmp comptia, org -p 80 -aV
-(D). nslookup -port=80 comtia.org
-Answer: C
-
-Nmap is used to discover hosts and services on a computer network by sending packets and analyzing
-the responses. Nmap provides a number of features for probing computer networks, including host
-discovery and service and operating system detection.
-NO.765 A security engineer was assigned to implement a solution to prevent attackers from gaining
-access by pretending to be authorized users. Which of the following technologies meets the
-requirement?
-(A). SSO
-(B). IDS
-(C). MFA
-(D). TPM
-Answer: C
-
-NO.766 Which of the following statements BEST describes zero-day exploits'?
-(A). When a zero-day exploit is discovered, the system cannot be protected by any means
-(B). Zero-day exploits have their own scoring category in CVSS
-(C). A zero-day exploit is initially undetectable and no patch for it exists
-(D). Discovering zero-day exploits is always performed via bug bounty programs
-Answer: C
-
-NO.767 Which of the following is used to ensure that evidence is admissible in legal proceedings
-when it is collected and provided to the authorities?
-(A). Chain of custody
-(B). Legal hold
-(C). Event log
-(D). Artifacts
-Answer: A
-
-NO.768 The cost of removable media and the security risks of transporting data have become too
-great for a laboratory. The laboratory has decided to interconnect with partner laboratories to make
-data transfers easier and more secure.
-The Chief Security Officer (CSO) has several concerns about proprietary data being exposed once the
-interconnections are established. Which of the following security features should the network
-administrator implement to prevent unwanted data exposure to users in partner laboratories?
-(A). VLAN zoning with a file-transfer server in an external-facing zone
-(B). DLP running on hosts to prevent file transfers between networks
-(C). NAC that permits only data-transfer agents to move data between networks
-(D). VPN with full tunneling and NAS authenticating through the Active Directory
-Answer: B
-
-NO.769 A Chief Executive Officer's (CEO) personal information was stolen in a social engineering
-attack. Which of the following sources would reveal if the CEO's personal information is for sale?
-(A). Automated information sharing
-(B). Open-source intelligence
-(C). The dark web
-(D). Vulnerability databases
-Answer: C
-
-NO.770 A bad actor tries to persuade someone to provide financial information over the phone in
-order to gain access to funds. Which of the following types of attacks does this scenario describe?
-Answer: A
-
-NO.771 An organization just implemented a new security system. Local laws state that citizens must
-be notified prior to encountering the detection mechanism to deter malicious activities. Which of the
-following is being implemented?
-(A). Proximity cards with guards
-(B). Fence with electricity
-(C). Drones with alarms
-(D). Motion sensors with signage
-Answer: D
-
-NO.772 A security analyst reports a company policy violation in a case in which a large amount of
-sensitive data is being downloaded after hours from various mobile devices to an external site. Upon
-further investiga-tion, the analyst notices that successful login attempts are being conducted with
-impossible travel times during the same time periods when the unauthorized downloads are
-occurring. The analyst also discov-ers a couple of WAPs are using the same SSID, but they have nonstandard DHCP configurations and an overlapping channel. Which of the following attacks is being
-conducted?
-(A). Evil twin
-(B). Jamming
-(C). DNS poisoning
-(D). Bluesnarfing
-(E). DDoS
-Answer: A
-
-NO.773 In which of the following situations would it be BEST to use a detective control type for
-mitigation?
-(A). A company implemented a network load balancer to ensure 99.999% availability of its web
-application.
-(B). A company designed a backup solution to increase the chances of restoring services in case of a
-natural disaster.
-(C). A company purchased an application-level firewall to isolate traffic between the accounting
-department and the information technology department.
-(D). A company purchased an IPS system, but after reviewing the requirements, the appliance was
-supposed to monitor, not block, any traffic.
-(E). A company purchased liability insurance for flood protection on all capital assets.
-Answer: D
-
-NO.774 Atocompany wants to modify its current backup strategy to modity its current backup
-strategy to minenize the number of backups that would need to be restored in case of data loss.
-Which of the following would be the BEST backup strategy
-(A). Incremental backups followed by differential backups
-(B). Full backups followed by incremental backups
-(C). Delta backups followed by differental backups
-(D). Incremental backups followed by delta backups
-(E). Full backup followed by different backups
-Answer: A
-
-NO.775 A user enters a password to log in to a workstation and is then prompted to enter an
-authentication code.
-Which of the following MFA factors or attributes are being utilized in the authentication process?
-(Select TWO).
-(A). Something you know
-(B). Something you have
-(C). Somewhere you are
-(D). Someone you are
-(E). Something you are
-(F). Something you can do
-Answer: B,E
-
-NO.776 A routine audit of medical billing claims revealed that several claims were submitted
-without the subscriber's knowledge. A review of the audit logs for the medical billing company's
-system indicated a company employee downloaded customer records and adjusted the direct
-deposit information to a personal bank account. Which of the following does this action describe?
-(A). Insider threat
-(B). Social engineering
-(C). Third-party risk
-(D). Data breach
-Answer: A
-
-NO.777 A Chief Information Security Officer (CISO) is concerned about the organization's ability to
-continue business operation in the event of a prolonged DDoS attack on its local datacenter that
-consumes database resources.
-Which of the following will the CISO MOST likely recommend to mitigate this risk?
-(A). Upgrade the bandwidth available into the datacenter
-(B). Implement a hot-site failover location
-(C). Switch to a complete SaaS offering to customers
-(D). Implement a challenge response test on all end-user queries
-Answer: B
-
-NO.778 Which of the following control types is focused primarily on reducing risk before an incident
-occurs?
-(A). Preventive
-(B). Deterrent
-(C). Corrective
-(D). Detective
-Answer: D
-
-NO.779 A user downloaded an extension for a browser, and the user's device later became infected.
-The analyst who is investigating the incident saw various logs where the attacker was hiding activity
-by deleting dat a. The following was observed running:
-Which of the following is the malware using to execute the attack?
-(A). PowerShell
-(B). Python
-(C). Bash
-(D). Macros
-Answer: A
 
 NO.780 An organization has a growing workforce that is mostly driven by additions to the sales
 department. Each newly hired salesperson relies on a mobile device to conduct business. The Chief
@@ -7817,112 +5157,6 @@ MOST effective to implement to further mitigate the reported vulnerability?
 (D). Application whitelisting
 Answer: D
 
-NO.790 Ann a forensic analyst. needs to prove that the data she originally acquired has remained
-unchanged while in her custody. Which of the following should Ann use?
-Answer: A
-
-NO.791 A major palitical party experienced a server breach. The hacker then publicly posted stolen
-intemal cammunications compeming campaign strategies to give the oppasitian party an advantage.
-Which of the following BEST describes these threat actors?
-(A). Semi-aulhorized hackers
-(B). State actors
-(C). Script kiddies
-(D). Advanced persistent threats
-Answer: B
-
-NO.792 A company suspects that some corporate accounts were compromised. The number of
-suspicious logins from locations not recognized by the users is increasing Employees who travel need
-their accounts protected without the nsk of blocking legitimate login requests that may be made over
-new sign-in properties. Which of the following security controls can be implemented?
-(A). Enforce MFA when an account request reaches a nsk threshold
-(B). Implement geofencing to only allow access from headquarters
-(C). Enforce time-based login requests that align with business hours
-(D). Shift the access control scheme to a discretionary access control
-Answer: B
-
-NO.793 A recent security assessment revealed that an actor explolied a vuinerable workstation
-willvin an organization and has persisted on the network for several months. The organization
-realizes the need to reassess Its seourlty strategy for mitigating risks within the perimeter Which of
-the following solutions woukl BEST support the organization's strategy?
-(A). FIM
-(B). OOP
-(C). EOR
-(D). DUT
-Answer: A
-
-The best solution to support the organization's security strategy in this situation is File Integrity
-Monitoring (FIM). FIM is a technique used to detect and monitor unauthorized changes to critical
-files and system configurations on a computer or network. It is used to detect malicious activity such
-as malware, unauthorized modifications, and malicious user activity. FIM can also be used to detect
-and monitor compliance with security policies and procedures.
-NO.794 A security analyst Is hardening a Linux workstation and must ensure It has public keys
-forwarded to remote systems for secure login Which of the following steps should the analyst
-perform to meet these requirements?
-(Select TWO).
-(A). Forward the keys using ssh-copy-id.
-(B). Forward the keys using scp.
-(C). Forward the keys using ash -i.
-(D). Forward the keys using openssl -s.
-(E). Forward the keys using ssh-keyger.
-Answer: A,D
-
-NO.795 A desktop support technician recently installed a new document-scanning software program
-on a computer. However, when the end user tried to launch the program, it did not respond. Which
-of the following is MOST likely the cause?
-(A). A new firewal rule is needed to access the application.
-(B). The system was quarantined for missing software updates.
-(C). The software was not added to the application whitelist.
-(D). The system was isolated from the network due to infected software
-Answer: C
-
-NO.796 Which of the following is a benefit of including a risk management framework into an
-organization's security approach?
-(A). It defines expected service levels from participating supply chain partners to ensure system
-outages are remediated in a timely manner
-(B). It identifies specific vendor products that have been tested and approved for use in a secure
-environment.
-(C). It provides legal assurances and remedies in the event a data breach occurs
-(D). It incorporates control, development, policy, and management activities into IT operations.
-Answer: D
-
-NO.797 Which of the following is an example of risk avoidance?
-(A). Installing security updates directly in production to expedite vulnerability fixes
-(B). Buying insurance to prepare for financial loss associated with exploits
-(C). Not installing new software to prevent compatibility errors
-(D). Not taking preventive measures to stop the theft of equipment
-Answer: C
-
-NO.798 Ahelp desk technician receives an email from the Chief Information Officer (C/O) asking for
-documents. The technician knows the CIO is on vacation for a few weeks. Which of the following
-should the technician do to validate the authenticity of the email?
-(A). Check the metadata in the email header of the received path in reverse order to follaw the
-email's path.
-(B). Hover the mouse over the CIO's email address to verify the email address.
-(C). Look at the metadata in the email header and verify the "From." line matches the CIO's email
-address.
-(D). Forward the email to the CIO and ask if the CIO sent the email requesting the documents.
-Answer: B
-
-NO.799 Several universities are participating m a collaborative research project and need to share
-compute and storage resources Which of the following cloud deployment strategies would BEST
-meet this need?
-(A). Community
-(B). Private
-(C). Public
-(D). Hybrid
-Answer: A
-
-Community cloud storage is a variation of the private cloud storage model, which offers cloud
-solutions for specific businesses or communities. In this model, cloud storage providers offer their
-cloud architecture, software and other development tools to meet the requirements of the
-community. A community cloud in computing is a collaborative effort in which infrastructure is
-shared between several organizations from a specific community with common concerns (security,
-compliance, jurisdiction, etc.), whether managed internally or by a third-party and hosted internally
-or externally.
-NO.800 An organization hired a consultant to assist with an active attack, and the consultant was
-able to identify the compromised accounts and computers. Which of the following is the consultant
-MOST likely to recommend to prepare for eradication?
-Answer: B
 
 NO.801 Which of the following BEST describes a security exploit for which a vendor patch is not
 readily available?
@@ -8022,12 +5256,6 @@ of the following should the administrator recommend?
 (D). PAM for user account management
 Answer: A
 
-NO.810 A financial nstitution wauid like to stare its customer data in a coud but still allaw the data
-ta he accessed and manipulated while encrypted. Doing so would prevent the claud servine provider
-from heing adle ta decipher the data due ta its sensitivity. The financial institutan is not concernec
-about computational averheads and slow speeds, Which of the follawing cryotographic techniques
-would BEST meet the requirement?
-Answer: A
 
 NO.811 Several employees return to work the day after attending an industry trade show. That
 same day, the security manager notices several malware alerts coming from each of the employee's
@@ -8122,94 +5350,6 @@ operate with unintended consequences?
 (D). Code reuse
 Answer: A
 
-NO.820 A security architect is working on an email solution that will send sensitive dat a. However,
-funds are not currently available in the budget for building additional infrastructure. Which of the
-following should the architect choose?
-Answer: D
-
-PGP (Pretty Good Privacy) is a commonly used encryption method for email communications to
-secure the sensitive data being sent. It allows for the encryption of the entire message or just the
-sensitive parts. It would be an appropriate solution in this case as it doesn't require additional
-infrastructure to implement.
-NO.821 An organization has implemented a two-step verification process to protect user access to
-data that s stored in the coud Ic scssnncsitcibin a vdiemiietanebins code to access the dat a. Which of
-the following authentication methods did the organization implement?
-(A). Token key
-(B). B Static code
-(C). Push notification
-Answer: A
-
-'D. HOTP
-NO.822 A company is auditing the manner in which its European customers' personal information is
-handled Which of the following should the company consult?
-(A). GDPR
-(B). ISO
-(C). NIST
-(D). PCI DSS
-Answer: A
-
-NO.823 An ofgantzation has decided to purchase an insurance policy because a risk assessment
-determined that the cost to remediate the risk is greater than the five-year cost of the insurance
-policy. The organization is enabling risk
-(A). avoidance
-(B). acceptance
-(C). mitigation
-(D). transference
-Answer: D
-
-NO.824 hich of the following ofien operaics in a clent-server architecture to act aa a sendoe
-repombory, providing entenprise consumers access to structured threal Intelligence data?
-(A). STIX
-(B). CIRT
-(C). OSINT
-(D). TARII
-Answer: B
-
-NO.825 A company is adopting a BYOD policy and is looking for a comprehensive solution to protect
-company.
-information on user devices. Which of the following solutions would BEST support the policy?
-(A). Mobile device management
-(B). Full-device encryption
-(C). Remote wipe
-(D). Biometrics
-Answer: A
-
-NO.826 Which of the following policies establishes rules to measure third-party work tasks and
-ensure deliverables are provided within a specific time line?
-(A). SLA
-(B). MOU
-(C). AUP
-(D). NDA
-Answer: A
-
-NO.827 The Chief Information Security Officer directed a risk reduction in shadow IT and created a
-policy requiring all unsanctioned high-risk SaaS applications to be blocked from user access Which of
-the following is the BEST security solution to reduce this risk?
-(A). CASB
-(B). VPN concentrator
-(C). MFA
-(D). VPC endpoint
-Answer: A
-
-NO.828 Which of the following is the MOST likely reason for securing an air-gapped laboratory HVAC
-system?
-(A). To avoid data leakage
-(B). To protect surveillance logs
-(C). To ensure availability
-(D). To facilitate third-party access
-Answer: C
-
-NO.829 Which of the following would be the BEST way to analyze diskless malware that has infected
-a VDI?
-(A). Shut down the VDI and copy off the event logs.
-(B). Take a memory snapshot of the running system.
-(C). Use NetFlow to identify command-and-control IPs.
-(D). Run a full on-demand scan of the root volume.
-Answer: B
-
-NO.830 Which of the following technical controls is BEST suited for the detection and prevention of
-buffer overflows on hosts?
-Answer: C
 
 NO.831 Which of the following documents provides expectations at a technical level for quality,
 availability, and responsibilities?
@@ -8304,10 +5444,6 @@ the timeliness of the response to a significant outage or incident?
 (D). NDA
 Answer: C
 
-NO.840 A news article states that a popular web browser deployed on all corporate PCs is
-vulnerable to a zero-day attack. Which of the following MOST concerns the Chief Information
-Security Officer about the information in the news article?
-Answer: D
 
 NO.841 A company is designing the layout of a new datacenter so it will have an optimal
 environmental temperature Which of the following must be included? (Select TWO)
@@ -8346,12 +5482,6 @@ would BEST meet the requirements?
 (D). Detective controls
 Answer: C
 
-Deterrent makes sense on further thought. The question just states unauthorized access. It doesn't
-state the intent of any unauthorized intruders. Deterrence is designed to reduce the occurrence of
-unintentional bystanders or unmotivated malicious agents from entering the site. Should the agent
-be motivated enough, a preventative measure is needed. But again, the question doesn't list
-intentions. Therefore this method works to limit the number of unauthorized visitors by weeding out
-everyone but the motivated, and the truly stupid.
 NO.845 Which of the following should be monitored by threat intelligence researchers who search
 for leaked credentials?
 (A). Common Weakness Enumeration
@@ -8370,15 +5500,6 @@ a data breach occurs Which of the following is the BEST solution to meet the req
 (D). Mirroring
 Answer: B
 
-NO.847 A penetration tester successfully gained access ta a company's network, The investigating
-analyst detarmines malicious traffic connacted through the WAP despite filtering rules being in place,
-Logging in to the connected switch, the analyst sees the folowing in the ARP table:
-Which of the following cid the penetration tester MOST liely use?
-(A). ARP poisoning
-(B). MAG eioning
-(C). Man in the middle
-(D). Evil twin
-Answer: B
 
 NO.848 A security analyst has been asked by the Chief Information Security Officer to
 * develop a secure method of providing centralized management of infrastructure
@@ -8522,9 +5643,6 @@ unsecured. Which of the following types of data does this combination BEST repre
 (D). Proprietary data
 Answer: B
 
-NO.860 fier segmenting the network, the network manager wants to control the traffic between the
-segments. Which of the following should the manager use to control the network traffic?
-Answer: D
 
 NO.861 A company has determined that if its computer-based manufacturing is not functioning for
 12 consecutive hours, it will lose more money that it costs to maintain the equipment. Which of the
@@ -8563,21 +5681,6 @@ regulation?
 (E). Guards
 Answer: C
 
-What are the functions of an HVAC system?
-An HVAC system is designed to control the environment in which it works. It achieves this by
-controlling the temperature (THERMAL) of a room through heating and cooling. It also controls the
-humidity level in that environment by controlling the movement and distribution of air inside the
-room. So it provides detective and corrective controls for THERMAL regulation.
-NO.865 A network analyst is investigating compromised corporate information. The analyst leads to
-a theory that network traffic was intercepted before being transmitted to the internet. The following
-output was captured on an internal host:
-Based on the IoCS, which of the following was the MOST likely attack used to compromise the
-network communication?
-(A). Denial of service
-(B). ARP poisoning
-(C). Command injection
-(D). MAC flooding
-Answer: D
 
 NO.866 A security engineer is hardening existing solutions to reduce application vulnerabilities.
 Which of the following solutions should the engineer implement FIRST? (Select TWO)
@@ -8590,15 +5693,6 @@ Which of the following solutions should the engineer implement FIRST? (Select TW
 (G). Hardware encryption
 Answer: A,G
 
-NO.867 A recent security audit reveaied that @ popular website with IP address 172.16 1 also has
-an FTP service thal employees were using to store sensitive corporate dat a. The organization's
-outbound firewall processes rules top-down. Which of the following would permit HTTP and HTTPS,
-while denying all other services for this host?
-(A).
-(B).
-(C).
-(D).
-Answer: A
 
 NO.868 Which of the following identifies the point in time when an organization will recover data in
 the event of an outage?
@@ -8669,7 +5763,7 @@ Which of the following tools can the analyst use to verify the permissions?
 (D). setuid
 (E). nessus
 (F). ne
-Answer: B
+Answer: C
 
 NO.875 Which of the following can work as an authentication method and as an alerting mechanism
 for unauthorized access attempts?
@@ -8720,26 +5814,6 @@ following log sources would be BEST to show the source of the unusual traffic?
 (D). VPC
 Answer: C
 
-NO.880 A customer called a company's security team to report that all invoices the customer has
-received over the last five days from the company appear to have fraudulent banking details. An
-investigation into the matter reveals the following
-* The manager of the accounts payable department is using the same password across multiple
-external websites and the corporate account.
-* One of the websites the manager used recently experienced a data breach
-* The manager's corporate email account was successfully accessed in the last fve days by an IP
-address located in a foreign country Which of the following attacks has MOST hkely been used to
-compromise the manager's corporate account?
-Answer: D
-
-NO.881 A security analyst was deploying a new website and found a connection attempting to
-authenticate on the site's portal. While Investigating The incident, the analyst identified the following
-Input in the username field:
-Which of the following BEST explains this type of attack?
-(A). DLL injection to hijack administrator services
-(B). SQLi on the field to bypass authentication
-(C). Execution of a stored XSS on the website
-(D). Code to execute a race condition on the server
-Answer: C
 
 NO.882 Which of the following roles would MOST likely have direct access to the senior
 management team?
@@ -8815,15 +5889,6 @@ for data that needs to remain confidential for a specific length of time?
 (D). The computational overhead of calculating the encryption key
 Answer: B
 
-NO.890 Which of the following types of controls is a turnstile?
-(A). Physical
-(B). Detective
-(C). Corrective
-(D). Technical
-Answer: A
-
-https://en.wikipedia.org/wiki/Turnstile#:~:text=A%20turnstile%20(also%20called%20a,%2C%20a%20
-pass%2C%20or%20similar.
 NO.891 Given the following logs:
 Which of the following BEST describes the type of attack that is occurring?
 (A). Rainbow table
@@ -8866,9 +5931,3 @@ management policy that aids in ensuring the security of an organization?
 (C). To only allow approved, organization-owned devices onto the business network
 (D). To standardize by selecting one laptop model for all users in the organization
 Answer: A
-
-An effective asset management policy helps an organization understand and manage the systems,
-hardware, and software it uses, and how they are used, including their vulnerabilities and risks. This
-information is crucial for accurately identifying and assessing risks to the organization, and making
-informed decisions about how to mitigate those risks. This is the best reason to maintain an effective
-asset management policy.
