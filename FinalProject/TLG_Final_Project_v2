@@ -1,0 +1,93 @@
+#!/usr/bin/env python3
+
+"""This is Reyce's TLG Python Project. This is a multiple choice
+Security+ exam with correct answer checking."""
+
+import random # imports the random module
+from colorama import init, Fore, Style # imports font formatting
+
+init() # This ensures colorama will perform correctly across various machines
+
+
+questions = [] # This is creating an empty list. The script will fill questions later.
+
+with open("FAST2TEST", "r") as questionfile:  # This reads text from the file FAST2TEST
+    lines = questionfile.readlines()   # This reads each line to target the info we want
+
+    questionbank = {}  # This creates an empty dictionary we'll use for our question bank
+    for line in lines: # This will read each line from the file containing the questions
+        line = line.strip() # This removes unused characters and spaces to clean up the ?
+
+        if line.startswith("NO."):
+        # The questions start with "NO. XXX" so this tells python this is where the question begins
+            if questionbank:
+                # Checks to see if there's 1 or more length in question bank.
+                questions.append(questionbank)
+                # If above is true a new question will take its place
+                questionbank ={"question": line}
+                # assigning the line containing the question to the variable question
+        elif line.startswith("Answer:"): # This weeds out the start of the correct answer
+            questionbank["correct_answer"] = line.split(":")[1].strip()
+                # This separates Answer: X into [Answer : X] to save the answer for a reveal
+        elif line != "": # Checks if the line is empty
+            questionbank.setdefault("answers", []).append(line)
+            # This stores the actual answer to the correct_answer when called upon
+
+    if questionbank: # Checks if there is any data not put into the question bank
+        questions.append(questionbank)
+        # If there is no data for the question the script will find another question
+
+def askquestion(questionbank):
+    # Starts a new function
+    print(Style.RESET_ALL)
+    # Prints a blank line and resets the format
+    print("New Question:")  
+    # Line that prints New Question: in white
+    print(Fore.YELLOW + questionbank['question'])  
+    # Print current question stored in the bank
+    color = Fore.YELLOW
+    # Color will be yellow for the following until reset
+
+    for line in questionbank['answers']:
+        # Targets the available answers and correct answer
+        if line.startswith("(A)."):
+            # Targets available answers
+            color = Fore.WHITE
+            style = Style.BRIGHT
+            # Sets their color to white and bold
+        elif line.startswith("Answer:"):
+            # Targets correct answer
+            color = Fore.YELLOW
+            style = Style.RESET_ALL
+            # Sets color to yellow and removes bold
+            break  
+            # Stops the function
+        print(color + line)
+        # Prints the lines in the above if statement with correct color
+
+    print(Style.RESET_ALL)  # Remove the color formatting and blank line
+
+    chosenanswer = input(Fore.CYAN + "Answers with multiple answers will be answered with a comma (A,B)\nChoose your answer: " + Style.RESET_ALL)
+    # Ask the user to select the answer they think is correct
+    print()  # Blank line for formatting
+
+    if chosenanswer.upper() == questionbank['correct_answer']:
+        # Checks to see if the user entered answer is the same as the correct stored answer
+        print(Fore.GREEN + "Correct!")  # Inform that the user is correct in green
+    else:
+        # Checks to see if the entered answer is INCORRECT
+        print(Fore.RED + "Incorrect!")  # Inform user is wrong in red
+        print(f"The correct answer is {questionbank['correct_answer']}")
+        # Tell user correct answer
+
+while True:
+    # Implements looping to continue the question criteria entered above
+    randomquestion = random.choice(questions)
+    # Have a random question be chosen and store as randomquestion
+    askquestion(randomquestion)
+    # Using askquestion, utilize the randomquestion variable to select a random question
+    continueorstay = input(Fore.MAGENTA + "\nReply 'stop' to end your test. Enter anything else to continue.\n" + Style.RESET_ALL)
+    # Allow user to continue or stop in cyan for aesthetics.
+    # Creates line spaces as well. Resets font after input.
+    if continueorstay.lower() == "stop": # Check if the user wants to stop
+        break # Program will end if user wants to stop
