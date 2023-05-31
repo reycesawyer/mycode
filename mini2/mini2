@@ -5,27 +5,46 @@
 import csv
 
 print("This is a database containing information about nfl players. You can search by certain criteria to find information about players.")
+# Read line above
 
 print("1. name\n2. first_name\n3. last_name\n4. birth_city\n5. birth_state\n6. birth_country\n7. birth_date\n8. college\n9. draft_team\n10. draft_round\n11. draft_pick\n12. draft_year\n13. position\n14. height\n15. weight\n16. death_date\n17. death_city\n18. death_state\n19. death_country\n20. year_start\n21. year_end")
+# Read line above
 choice= int(input("Chose what section you want to search by: \n"))
+# Choose which category to search by
 name_to_find = input("What do you want to search for?\n")
+# Criteria to search by
 sort_choice = int(input("Choose what section you want to sort by: \n"))
+# Choose what information to sort by
 
 def find_players_by_name(csv_file, name):
+    # Define a new function
+    # Open the CSV file 
     matching_rows = []
+    # Start an empty list
     with open(csv_file, 'r') as player_data_file:
+        # Open the file for reading
         reader = csv.reader(player_data_file)
+        # Start reading the data
         for row in reader:
+            # Isolate rows of the data
             if name.lower() in row[choice - 1].lower():
+                # See if entered parameter is in the row you chose and ignores case
                 matching_rows.append(row)
+                # Adds the mathcing rows to the empty list
     return matching_rows
+    # Prints the matches rows
 
 
 found_rows = find_players_by_name("nflplayers.txt", name_to_find)
+# Define the found rows from the text based on the search criterai
 if found_rows:
+    # If the search was successful continue
     sorted_rows = sorted(found_rows, key=lambda x: x[sort_choice - 1])
+    # Sort the rows by value or alphabetically by your choice
     for row in sorted_rows:
+        # Print the player name then the rest of the info from the CSV
         print(f"Player: {row[0]} {row[1:-1]}\n")
 else:
+    # If none found return the info below
     print("Player not found.")
 
