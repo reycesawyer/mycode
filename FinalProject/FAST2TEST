@@ -193,7 +193,7 @@ authentication methods should be configured to allow this type of integration ac
 (B). SSO
 (C). TACACS+
 (D). Kerberos
-Answer: B
+Answer: C
 
 NO.22 Which of the following is a targeted attack aimed at compromising users within a specific
 industry or group?
@@ -3837,7 +3837,7 @@ defines this metric?
 (B). RTO
 (C). RPO
 (D). MTBF
-Answer: A
+Answer: C
 
 NO.596 A security administrator needs to inspect in-transit files on the enterprise network to search
 for Pll, credit card data, and classification words. Which of the following would be the BEST to use?
@@ -4599,7 +4599,7 @@ easy reordering process. Which of the following methods would BEST accomplish th
 (B). Encrypting the credit card information in transit.
 (C). Hashing the credit card numbers upon entry.
 (D). Tokenizing the credit cards in the database
-Answer: C
+Answer: D
 
 NO.701 Employees are having issues accessing the company's website. Some employees report very
 slow performance, while others cannot the website at all. The web and security administrators

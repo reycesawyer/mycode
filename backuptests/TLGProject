@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+
+"""This is Reyce's TLG Python Project. This is a multiple choice
+Security+ exam with correct answer checking."""
+
+import random
+from colorama import init, Fore, Back, Style
+
+
+# Start color capabilities
+init()
+
+# Define questions
+questions = []
+
+# Read questions from the text document
+with open("ProjectQuestions", "r") as file:
+    lines = file.readlines()
+
+    question_data = {}
+    for line in lines:
+        line = line.strip()
+
+        if line.startswith("QUESTION"):
+            if question_data:
+                questions.append(question_data)
+            question_data = {"question": line}
+        elif line.startswith("Correct Answer:"):
+            question_data["correct_answer"] = line.split(":")[1].strip()
+        elif line != "":
+            question_data.setdefault("answers", []).append(line)
+
+    # Add the last question
+    if question_data:
+        questions.append(question_data)
+
+
+def ask_question(question_data):
+    # Display the question
+    print()
+    print(Fore.YELLOW + question_data['question'])
+
+    # Display the answers on separate lines
+    for answer in question_data['answers']:
+        print(Style.BRIGHT + Fore.WHITE + answer)
+
+    print(Style.RESET_ALL)
+
+    # Ask what they think the answer is
+    user_answer = input(Fore.YELLOW + "Enter your answer: ")
+    print()
+
+    # Check if the user's answer is correct
+    if user_answer.upper() == question_data['correct_answer']:
+        print(Fore.GREEN + "Correct!")
+    else:
+        print(Fore.RED + "Incorrect!")
+        print("The correct answer is:", question_data['correct_answer'])
+
+
+# Main program
+while True:
+    # Select a random question
+    random_question = random.choice(questions)
+
+    # Ask the random question
+    ask_question(random_question)
+
+    # Prompt for another question
+    choice = input(Fore.CYAN + "\nReply 'stop' to end test. Enter anything else to continue.\n" + Style.RESET_ALL)
+    if choice.lower() == "stop":
+        break
+
